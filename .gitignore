@@ -1,3 +1,4 @@
 .env/
 rough.py
-
+ssh_key
+ssh_key.pub

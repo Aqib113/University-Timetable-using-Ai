@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'MainWindowyhhJsR.ui'
+## Form generated from reading UI file 'ui_MainWindowWykMKq.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.2
 ##
@@ -16,10 +16,11 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox, QComboBox,
-    QFrame, QGridLayout, QHBoxLayout, QHeaderView,
-    QLabel, QLineEdit, QMainWindow, QPushButton,
-    QSizePolicy, QSpacerItem, QSpinBox, QStackedWidget,
-    QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget)
+    QFormLayout, QFrame, QGridLayout, QHBoxLayout,
+    QHeaderView, QLabel, QLineEdit, QMainWindow,
+    QPushButton, QSizePolicy, QSpacerItem, QSpinBox,
+    QStackedWidget, QTableWidget, QTableWidgetItem, QVBoxLayout,
+    QWidget)
 import resource_rc
 
 class Ui_MainWindow(object):
@@ -1406,7 +1407,6 @@ class Ui_MainWindow(object):
         self.frame_4.setLineWidth(0)
         self.verticalLayout_34 = QVBoxLayout(self.frame_4)
         self.verticalLayout_34.setObjectName(u"verticalLayout_34")
-        self.verticalLayout_34.setContentsMargins(0, -1, 0, 0)
         self.AddMoreLecture_Button = QPushButton(self.frame_4)
         self.AddMoreLecture_Button.setObjectName(u"AddMoreLecture_Button")
         icon16 = QIcon()
@@ -1558,13 +1558,15 @@ class Ui_MainWindow(object):
         self.Inputpages.addWidget(self.LectureTimePage)
         self.SetupClasses = QWidget()
         self.SetupClasses.setObjectName(u"SetupClasses")
-        self.verticalLayout_19 = QVBoxLayout(self.SetupClasses)
-        self.verticalLayout_19.setObjectName(u"verticalLayout_19")
+        self.verticalLayout_20 = QVBoxLayout(self.SetupClasses)
+        self.verticalLayout_20.setObjectName(u"verticalLayout_20")
         self.SetupClassesFrame1 = QFrame(self.SetupClasses)
         self.SetupClassesFrame1.setObjectName(u"SetupClassesFrame1")
         self.SetupClassesFrame1.setMinimumSize(QSize(0, 370))
         self.SetupClassesFrame1.setMaximumSize(QSize(16777215, 16777215))
-        self.SetupClassesFrame1.setStyleSheet(u"QPushButton{\n"
+        self.SetupClassesFrame1.setAutoFillBackground(False)
+        self.SetupClassesFrame1.setStyleSheet(u"\n"
+"QPushButton{\n"
 "padding:5px;\n"
 "background-color:rgb(33, 47, 61);\n"
 "}\n"
@@ -1583,15 +1585,12 @@ class Ui_MainWindow(object):
 "\n"
 "}\n"
 "\n"
-"QHeaderView::section {\n"
-"    background-color:  rgb(255, 255, 255);\n"
-"	border: none;\n"
-"    color: black;\n"
-"    font-weight: 2px;\n"
-"    padding: 4px;\n"
-"\n"
+"QHeaderView::section:horizontal {\n"
+"    font-weight: bold;\n"
+"    background-color: #f0f0f0;\n"
+"    padding: 5px;\n"
+"    border: 1px solid #ddd;\n"
 "}\n"
-"\n"
 "QTableWidget::item:selected {\n"
 "    background-color: #3498db;\n"
 "    color: white;\n"
@@ -1601,24 +1600,71 @@ class Ui_MainWindow(object):
 "	background-color:rgba(0,0,0,0.15)	;\n"
 "    padding: 4px;\n"
 "    border: none;\n"
+"}\n"
+"\n"
+"#Heading1Frame_3{\n"
+"border-left: 3px solid rgb(33, 47, 61);\n"
+"padding-left: 10px;\n"
+"}\n"
+"\n"
+"#AddMoreLecture_Button{\n"
+"background: none;\n"
+"border:none\n"
 "}")
         self.SetupClassesFrame1.setFrameShape(QFrame.Shape.StyledPanel)
         self.SetupClassesFrame1.setFrameShadow(QFrame.Shadow.Raised)
-        self.verticalLayout_20 = QVBoxLayout(self.SetupClassesFrame1)
-        self.verticalLayout_20.setObjectName(u"verticalLayout_20")
-        self.verticalLayout_20.setContentsMargins(-1, 0, -1, -1)
-        self.MainHeading = QLabel(self.SetupClassesFrame1)
-        self.MainHeading.setObjectName(u"MainHeading")
-        self.MainHeading.setFont(font8)
+        self.verticalLayout_19 = QVBoxLayout(self.SetupClassesFrame1)
+        self.verticalLayout_19.setObjectName(u"verticalLayout_19")
+        self.Heading1Frame_3 = QFrame(self.SetupClassesFrame1)
+        self.Heading1Frame_3.setObjectName(u"Heading1Frame_3")
+        self.Heading1Frame_3.setFrameShape(QFrame.Shape.StyledPanel)
+        self.Heading1Frame_3.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout_36 = QVBoxLayout(self.Heading1Frame_3)
+        self.verticalLayout_36.setSpacing(0)
+        self.verticalLayout_36.setObjectName(u"verticalLayout_36")
+        self.verticalLayout_36.setContentsMargins(0, 0, 0, 0)
+        self.Heading1_3 = QLabel(self.Heading1Frame_3)
+        self.Heading1_3.setObjectName(u"Heading1_3")
+        self.Heading1_3.setFont(font11)
 
-        self.verticalLayout_20.addWidget(self.MainHeading, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignTop)
+        self.verticalLayout_36.addWidget(self.Heading1_3)
 
-        self.verticalSpacer_4 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.MainLabel_3 = QLabel(self.Heading1Frame_3)
+        self.MainLabel_3.setObjectName(u"MainLabel_3")
+        self.MainLabel_3.setFont(font8)
 
-        self.verticalLayout_20.addItem(self.verticalSpacer_4)
+        self.verticalLayout_36.addWidget(self.MainLabel_3)
 
-        self.ClassForm = QFrame(self.SetupClassesFrame1)
+        self.label_10 = QLabel(self.Heading1Frame_3)
+        self.label_10.setObjectName(u"label_10")
+        self.label_10.setFont(font1)
+
+        self.verticalLayout_36.addWidget(self.label_10)
+
+
+        self.verticalLayout_19.addWidget(self.Heading1Frame_3)
+
+        self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum)
+
+        self.verticalLayout_19.addItem(self.verticalSpacer_3)
+
+        self.frame_5 = QFrame(self.SetupClassesFrame1)
+        self.frame_5.setObjectName(u"frame_5")
+        self.frame_5.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_5.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_18 = QHBoxLayout(self.frame_5)
+        self.horizontalLayout_18.setObjectName(u"horizontalLayout_18")
+        self.frame_6 = QFrame(self.frame_5)
+        self.frame_6.setObjectName(u"frame_6")
+        self.frame_6.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_6.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout_38 = QVBoxLayout(self.frame_6)
+        self.verticalLayout_38.setSpacing(1)
+        self.verticalLayout_38.setObjectName(u"verticalLayout_38")
+        self.verticalLayout_38.setContentsMargins(0, 0, 0, 0)
+        self.ClassForm = QFrame(self.frame_6)
         self.ClassForm.setObjectName(u"ClassForm")
+        self.ClassForm.setContextMenuPolicy(Qt.ContextMenuPolicy.DefaultContextMenu)
         self.ClassForm.setStyleSheet(u"QComboBox, QAbstractItemView{\n"
 "background-color: rgb(255, 255, 255);\n"
 "color: rgb(0, 0, 0);\n"
@@ -1626,8 +1672,9 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton{\n"
+"Background: none;\n"
 "padding:5px;\n"
-"background-color: rgb(56, 73, 89);\n"
+"border:none;\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
@@ -1635,37 +1682,142 @@ class Ui_MainWindow(object):
 "}")
         self.ClassForm.setFrameShape(QFrame.Shape.StyledPanel)
         self.ClassForm.setFrameShadow(QFrame.Shadow.Raised)
-        self.gridLayout_2 = QGridLayout(self.ClassForm)
-        self.gridLayout_2.setObjectName(u"gridLayout_2")
-        self.DepartmentInput = QComboBox(self.ClassForm)
-        self.DepartmentInput.setObjectName(u"DepartmentInput")
-        self.DepartmentInput.setEnabled(True)
-        sizePolicy5.setHeightForWidth(self.DepartmentInput.sizePolicy().hasHeightForWidth())
-        self.DepartmentInput.setSizePolicy(sizePolicy5)
-        self.DepartmentInput.setMinimumSize(QSize(260, 40))
-        self.DepartmentInput.setEditable(False)
+        self.formLayout = QFormLayout(self.ClassForm)
+        self.formLayout.setObjectName(u"formLayout")
+        self.formLayout.setContentsMargins(0, 0, 0, 0)
+        self.Department_Input_Combobox = QComboBox(self.ClassForm)
+        self.Department_Input_Combobox.addItem("")
+        self.Department_Input_Combobox.setObjectName(u"Department_Input_Combobox")
+        self.Department_Input_Combobox.setMinimumSize(QSize(190, 0))
+        self.Department_Input_Combobox.setFont(font11)
 
-        self.gridLayout_2.addWidget(self.DepartmentInput, 1, 1, 1, 1)
+        self.formLayout.setWidget(0, QFormLayout.LabelRole, self.Department_Input_Combobox)
 
-        self.DegreeInput = QComboBox(self.ClassForm)
-        self.DegreeInput.addItem("")
-        self.DegreeInput.setObjectName(u"DegreeInput")
-        self.DegreeInput.setMinimumSize(QSize(260, 32))
-        self.DegreeInput.setEditable(False)
+        self.LevelInput_Combobox = QComboBox(self.ClassForm)
+        self.LevelInput_Combobox.setObjectName(u"LevelInput_Combobox")
+        self.LevelInput_Combobox.setMinimumSize(QSize(190, 0))
+        self.LevelInput_Combobox.setFont(font11)
 
-        self.gridLayout_2.addWidget(self.DegreeInput, 1, 2, 1, 1)
+        self.formLayout.setWidget(1, QFormLayout.LabelRole, self.LevelInput_Combobox)
 
-        self.DisciplineInput = QComboBox(self.ClassForm)
-        self.DisciplineInput.setObjectName(u"DisciplineInput")
-        self.DisciplineInput.setMinimumSize(QSize(260, 32))
-        self.DisciplineInput.setEditable(False)
+        self.Discipline_Input_Combobox = QComboBox(self.ClassForm)
+        self.Discipline_Input_Combobox.setObjectName(u"Discipline_Input_Combobox")
+        self.Discipline_Input_Combobox.setMinimumSize(QSize(190, 0))
+        self.Discipline_Input_Combobox.setFont(font11)
 
-        self.gridLayout_2.addWidget(self.DisciplineInput, 2, 1, 1, 1)
+        self.formLayout.setWidget(2, QFormLayout.LabelRole, self.Discipline_Input_Combobox)
+
+        self.Add_More_Departments = QPushButton(self.ClassForm)
+        self.Add_More_Departments.setObjectName(u"Add_More_Departments")
+        sizePolicy9 = QSizePolicy(QSizePolicy.Policy.Maximum, QSizePolicy.Policy.Expanding)
+        sizePolicy9.setHorizontalStretch(0)
+        sizePolicy9.setVerticalStretch(0)
+        sizePolicy9.setHeightForWidth(self.Add_More_Departments.sizePolicy().hasHeightForWidth())
+        self.Add_More_Departments.setSizePolicy(sizePolicy9)
+        self.Add_More_Departments.setIcon(icon16)
+        self.Add_More_Departments.setIconSize(QSize(25, 25))
+
+        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.Add_More_Departments)
+
+        self.Add_More_Levels = QPushButton(self.ClassForm)
+        self.Add_More_Levels.setObjectName(u"Add_More_Levels")
+        sizePolicy6.setHeightForWidth(self.Add_More_Levels.sizePolicy().hasHeightForWidth())
+        self.Add_More_Levels.setSizePolicy(sizePolicy6)
+        self.Add_More_Levels.setIcon(icon16)
+        self.Add_More_Levels.setIconSize(QSize(25, 25))
+
+        self.formLayout.setWidget(1, QFormLayout.FieldRole, self.Add_More_Levels)
+
+        self.Add_More_Disciplines = QPushButton(self.ClassForm)
+        self.Add_More_Disciplines.setObjectName(u"Add_More_Disciplines")
+        sizePolicy6.setHeightForWidth(self.Add_More_Disciplines.sizePolicy().hasHeightForWidth())
+        self.Add_More_Disciplines.setSizePolicy(sizePolicy6)
+        self.Add_More_Disciplines.setIcon(icon16)
+        self.Add_More_Disciplines.setIconSize(QSize(25, 25))
+
+        self.formLayout.setWidget(2, QFormLayout.FieldRole, self.Add_More_Disciplines)
 
 
-        self.verticalLayout_20.addWidget(self.ClassForm, 0, Qt.AlignmentFlag.AlignTop)
+        self.verticalLayout_38.addWidget(self.ClassForm, 0, Qt.AlignmentFlag.AlignTop)
 
-        self.SectionTable = QTableWidget(self.SetupClassesFrame1)
+        self.frame_7 = QFrame(self.frame_6)
+        self.frame_7.setObjectName(u"frame_7")
+        self.frame_7.setStyleSheet(u"#Class_Settings_Buttons ,#Delete_Class_Button, #Refresh_Class_Form{\n"
+"background:transparent;\n"
+"border:none;\n"
+"}\n"
+"")
+        self.frame_7.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_7.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout_37 = QVBoxLayout(self.frame_7)
+        self.verticalLayout_37.setSpacing(2)
+        self.verticalLayout_37.setObjectName(u"verticalLayout_37")
+        self.verticalLayout_37.setContentsMargins(0, 0, 19, 0)
+        self.pushButton_4 = QPushButton(self.frame_7)
+        self.pushButton_4.setObjectName(u"pushButton_4")
+        sizePolicy1.setHeightForWidth(self.pushButton_4.sizePolicy().hasHeightForWidth())
+        self.pushButton_4.setSizePolicy(sizePolicy1)
+        self.pushButton_4.setMinimumSize(QSize(135, 33))
+        self.pushButton_4.setFont(font11)
+
+        self.verticalLayout_37.addWidget(self.pushButton_4)
+
+        self.frame_8 = QFrame(self.frame_7)
+        self.frame_8.setObjectName(u"frame_8")
+        self.frame_8.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_8.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_19 = QHBoxLayout(self.frame_8)
+        self.horizontalLayout_19.setObjectName(u"horizontalLayout_19")
+        self.horizontalLayout_19.setContentsMargins(0, 0, 0, 0)
+        self.Class_Settings_Buttons = QPushButton(self.frame_8)
+        self.Class_Settings_Buttons.setObjectName(u"Class_Settings_Buttons")
+        sizePolicy.setHeightForWidth(self.Class_Settings_Buttons.sizePolicy().hasHeightForWidth())
+        self.Class_Settings_Buttons.setSizePolicy(sizePolicy)
+        icon17 = QIcon()
+        icon17.addFile(u":/settings Logo Black.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.Class_Settings_Buttons.setIcon(icon17)
+        self.Class_Settings_Buttons.setIconSize(QSize(35, 35))
+
+        self.horizontalLayout_19.addWidget(self.Class_Settings_Buttons)
+
+        self.Delete_Class_Button = QPushButton(self.frame_8)
+        self.Delete_Class_Button.setObjectName(u"Delete_Class_Button")
+        sizePolicy.setHeightForWidth(self.Delete_Class_Button.sizePolicy().hasHeightForWidth())
+        self.Delete_Class_Button.setSizePolicy(sizePolicy)
+        self.Delete_Class_Button.setFont(font11)
+        self.Delete_Class_Button.setStyleSheet(u"")
+        icon18 = QIcon()
+        icon18.addFile(u":/delete logo red.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.Delete_Class_Button.setIcon(icon18)
+        self.Delete_Class_Button.setIconSize(QSize(35, 35))
+
+        self.horizontalLayout_19.addWidget(self.Delete_Class_Button)
+
+        self.Refresh_Class_Form = QPushButton(self.frame_8)
+        self.Refresh_Class_Form.setObjectName(u"Refresh_Class_Form")
+        sizePolicy.setHeightForWidth(self.Refresh_Class_Form.sizePolicy().hasHeightForWidth())
+        self.Refresh_Class_Form.setSizePolicy(sizePolicy)
+        icon19 = QIcon()
+        icon19.addFile(u":/refresh-svgrepo-com (1).png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.Refresh_Class_Form.setIcon(icon19)
+        self.Refresh_Class_Form.setIconSize(QSize(35, 35))
+
+        self.horizontalLayout_19.addWidget(self.Refresh_Class_Form)
+
+
+        self.verticalLayout_37.addWidget(self.frame_8)
+
+
+        self.verticalLayout_38.addWidget(self.frame_7, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignBottom)
+
+
+        self.horizontalLayout_18.addWidget(self.frame_6)
+
+        self.horizontalSpacer_4 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_18.addItem(self.horizontalSpacer_4)
+
+        self.SectionTable = QTableWidget(self.frame_5)
         if (self.SectionTable.columnCount() < 2):
             self.SectionTable.setColumnCount(2)
         __qtablewidgetitem4 = QTableWidgetItem()
@@ -1675,26 +1827,147 @@ class Ui_MainWindow(object):
         if (self.SectionTable.rowCount() < 7):
             self.SectionTable.setRowCount(7)
         self.SectionTable.setObjectName(u"SectionTable")
+        self.SectionTable.setMinimumSize(QSize(320, 266))
         self.SectionTable.setLineWidth(5)
+        self.SectionTable.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
+        self.SectionTable.setDragDropMode(QAbstractItemView.DragDropMode.InternalMove)
         self.SectionTable.setRowCount(7)
         self.SectionTable.setColumnCount(2)
+        self.SectionTable.horizontalHeader().setVisible(True)
 
-        self.verticalLayout_20.addWidget(self.SectionTable)
-
-        self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
-
-        self.verticalLayout_20.addItem(self.verticalSpacer_3)
-
-        self.pushButton_2 = QPushButton(self.SetupClassesFrame1)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setMinimumSize(QSize(155, 33))
-        self.pushButton_2.setMaximumSize(QSize(155, 33))
-        self.pushButton_2.setFont(font4)
-
-        self.verticalLayout_20.addWidget(self.pushButton_2, 0, Qt.AlignmentFlag.AlignHCenter)
+        self.horizontalLayout_18.addWidget(self.SectionTable)
 
 
-        self.verticalLayout_19.addWidget(self.SetupClassesFrame1, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
+        self.verticalLayout_19.addWidget(self.frame_5)
+
+        self.BottomButtons_3 = QFrame(self.SetupClassesFrame1)
+        self.BottomButtons_3.setObjectName(u"BottomButtons_3")
+        sizePolicy.setHeightForWidth(self.BottomButtons_3.sizePolicy().hasHeightForWidth())
+        self.BottomButtons_3.setSizePolicy(sizePolicy)
+        self.BottomButtons_3.setMinimumSize(QSize(385, 43))
+        self.BottomButtons_3.setStyleSheet(u"\n"
+"QPushButton{\n"
+"text-align:left;\n"
+"padding: 5px;\n"
+"border:none;\n"
+"border-radius:0px;\n"
+"}\n"
+"\n"
+"#NextButton_3{\n"
+"border-top-right-radius: 7px;\n"
+"border-Bottom-right-radius: 7px;\n"
+"}\n"
+"\n"
+"#PreviousButton_3{\n"
+"border-top-left-radius: 7px;\n"
+"border-Bottom-left-radius: 7px;\n"
+"}\n"
+"\n"
+"\n"
+"QLabel{\n"
+"Background-color: rgb(33, 47, 61);\n"
+"color:   rgb(240, 255, 253);\n"
+"}\n"
+"\n"
+"#NextButton_Label_3{\n"
+"border-bottom-left-radius: 7px;\n"
+"border-top-left-radius: 7px;\n"
+"padding-left: 5px;\n"
+"}\n"
+"\n"
+"#PreviousButton_Label_3{\n"
+"border-top-right-radius: 7px;\n"
+"border-Bottom-right-radius: 7px;\n"
+"padding-right: 5px;\n"
+"}\n"
+"\n"
+"#NextButtonFrame:hover{\n"
+"border: 1px solid rgb(33, 47, 61);\n"
+"border-radius: 7px;\n"
+"}\n"
+"#PreviousButtonFrame:hover{\n"
+"border: 1px solid rgb(33, 47, 61);\n"
+"border-radius: 7px;\n"
+"}")
+        self.BottomButtons_3.setFrameShape(QFrame.Shape.StyledPanel)
+        self.BottomButtons_3.setFrameShadow(QFrame.Shadow.Raised)
+        self.BottomButtons_3.setLineWidth(0)
+        self.horizontalLayout_15 = QHBoxLayout(self.BottomButtons_3)
+        self.horizontalLayout_15.setSpacing(0)
+        self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
+        self.horizontalLayout_15.setContentsMargins(1, 1, 1, 1)
+        self.PreviousButtonFrame_3 = QFrame(self.BottomButtons_3)
+        self.PreviousButtonFrame_3.setObjectName(u"PreviousButtonFrame_3")
+        self.PreviousButtonFrame_3.setFrameShape(QFrame.Shape.StyledPanel)
+        self.PreviousButtonFrame_3.setFrameShadow(QFrame.Shadow.Raised)
+        self.PreviousButtonFrame_3.setLineWidth(0)
+        self.horizontalLayout_16 = QHBoxLayout(self.PreviousButtonFrame_3)
+        self.horizontalLayout_16.setSpacing(0)
+        self.horizontalLayout_16.setObjectName(u"horizontalLayout_16")
+        self.horizontalLayout_16.setContentsMargins(1, 1, 1, 1)
+        self.PreviousButton_3 = QPushButton(self.PreviousButtonFrame_3)
+        self.PreviousButton_3.setObjectName(u"PreviousButton_3")
+        sizePolicy5.setHeightForWidth(self.PreviousButton_3.sizePolicy().hasHeightForWidth())
+        self.PreviousButton_3.setSizePolicy(sizePolicy5)
+        self.PreviousButton_3.setFont(font5)
+        self.PreviousButton_3.setIcon(icon14)
+        self.PreviousButton_3.setIconSize(QSize(25, 25))
+
+        self.horizontalLayout_16.addWidget(self.PreviousButton_3)
+
+        self.PreviousButton_Label_3 = QLabel(self.PreviousButtonFrame_3)
+        self.PreviousButton_Label_3.setObjectName(u"PreviousButton_Label_3")
+        sizePolicy5.setHeightForWidth(self.PreviousButton_Label_3.sizePolicy().hasHeightForWidth())
+        self.PreviousButton_Label_3.setSizePolicy(sizePolicy5)
+        self.PreviousButton_Label_3.setMinimumSize(QSize(0, 35))
+        self.PreviousButton_Label_3.setFont(font5)
+        self.PreviousButton_Label_3.setLineWidth(0)
+
+        self.horizontalLayout_16.addWidget(self.PreviousButton_Label_3)
+
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_16.addItem(self.horizontalSpacer_3)
+
+
+        self.horizontalLayout_15.addWidget(self.PreviousButtonFrame_3)
+
+        self.NextButtonFrame_3 = QFrame(self.BottomButtons_3)
+        self.NextButtonFrame_3.setObjectName(u"NextButtonFrame_3")
+        self.NextButtonFrame_3.setFrameShape(QFrame.Shape.StyledPanel)
+        self.NextButtonFrame_3.setFrameShadow(QFrame.Shadow.Raised)
+        self.NextButtonFrame_3.setLineWidth(0)
+        self.horizontalLayout_17 = QHBoxLayout(self.NextButtonFrame_3)
+        self.horizontalLayout_17.setSpacing(0)
+        self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
+        self.horizontalLayout_17.setContentsMargins(1, 1, 1, 1)
+        self.NextButton_Label_3 = QLabel(self.NextButtonFrame_3)
+        self.NextButton_Label_3.setObjectName(u"NextButton_Label_3")
+        sizePolicy5.setHeightForWidth(self.NextButton_Label_3.sizePolicy().hasHeightForWidth())
+        self.NextButton_Label_3.setSizePolicy(sizePolicy5)
+        self.NextButton_Label_3.setMinimumSize(QSize(65, 35))
+        self.NextButton_Label_3.setFont(font5)
+        self.NextButton_Label_3.setLineWidth(0)
+
+        self.horizontalLayout_17.addWidget(self.NextButton_Label_3)
+
+        self.NextButton_3 = QPushButton(self.NextButtonFrame_3)
+        self.NextButton_3.setObjectName(u"NextButton_3")
+        self.NextButton_3.setFont(font5)
+        self.NextButton_3.setStyleSheet(u"")
+        self.NextButton_3.setIcon(icon15)
+        self.NextButton_3.setIconSize(QSize(25, 25))
+
+        self.horizontalLayout_17.addWidget(self.NextButton_3)
+
+
+        self.horizontalLayout_15.addWidget(self.NextButtonFrame_3)
+
+
+        self.verticalLayout_19.addWidget(self.BottomButtons_3)
+
+
+        self.verticalLayout_20.addWidget(self.SetupClassesFrame1, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignTop)
 
         self.Inputpages.addWidget(self.SetupClasses)
         self.SetUpRooms = QWidget()
@@ -1898,6 +2171,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5.setSpacing(2)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
         self.horizontalLayout_5.setContentsMargins(2, 2, 5, 2)
+        self.FooterHorizontaSpacer1 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.FooterHorizontaSpacer1)
+
         self.FooterRoughLabel = QLabel(self.Footer)
         self.FooterRoughLabel.setObjectName(u"FooterRoughLabel")
         font14 = QFont()
@@ -1918,10 +2195,6 @@ class Ui_MainWindow(object):
         self.FooterMiddleLabel.setFont(font)
 
         self.horizontalLayout_5.addWidget(self.FooterMiddleLabel)
-
-        self.FooterHorizontaSpacer1 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
-
-        self.horizontalLayout_5.addItem(self.FooterHorizontaSpacer1)
 
         self.FooterRightLabel = QFrame(self.Footer)
         self.FooterRightLabel.setObjectName(u"FooterRightLabel")
@@ -1951,9 +2224,9 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.MainContentBody.setCurrentIndex(0)
-        self.TimetablePageExtention.setCurrentIndex(0)
-        self.Inputpages.setCurrentIndex(1)
+        self.MainContentBody.setCurrentIndex(2)
+        self.TimetablePageExtention.setCurrentIndex(1)
+        self.Inputpages.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -2020,17 +2293,29 @@ class Ui_MainWindow(object):
         self.PreviousButton_Label_2.setText(QCoreApplication.translate("MainWindow", u"Previous", None))
         self.NextButton_Label_2.setText(QCoreApplication.translate("MainWindow", u"Step 3", None))
         self.NextButton_2.setText("")
-        self.MainHeading.setText(QCoreApplication.translate("MainWindow", u"Setting up Classes", None))
-        self.DepartmentInput.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Department", None))
-        self.DegreeInput.setItemText(0, QCoreApplication.translate("MainWindow", u"BS/MS/FSc etc", None))
+        self.Heading1_3.setText(QCoreApplication.translate("MainWindow", u"Step 2:", None))
+        self.MainLabel_3.setText(QCoreApplication.translate("MainWindow", u"Setup Lectures and Timings", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"Add Lectures and their timings", None))
+        self.Department_Input_Combobox.setItemText(0, QCoreApplication.translate("MainWindow", u"Computer Science", None))
 
-        self.DegreeInput.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Bs / Ms /  etc", None))
-        self.DisciplineInput.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Discipline", None))
+        self.Department_Input_Combobox.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Department", None))
+        self.LevelInput_Combobox.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Level", None))
+        self.Discipline_Input_Combobox.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Discipline", None))
+        self.Add_More_Departments.setText("")
+        self.Add_More_Levels.setText("")
+        self.Add_More_Disciplines.setText("")
+        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Save", None))
+        self.Class_Settings_Buttons.setText("")
+        self.Delete_Class_Button.setText("")
+        self.Refresh_Class_Form.setText("")
         ___qtablewidgetitem4 = self.SectionTable.horizontalHeaderItem(0)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Choose Semester", None));
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Active semesters", None));
         ___qtablewidgetitem5 = self.SectionTable.horizontalHeaderItem(1)
         ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Sections", None));
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Save", None))
+        self.PreviousButton_3.setText("")
+        self.PreviousButton_Label_3.setText(QCoreApplication.translate("MainWindow", u"Previous", None))
+        self.NextButton_Label_3.setText(QCoreApplication.translate("MainWindow", u"Step 3", None))
+        self.NextButton_3.setText("")
         self.label.setText(QCoreApplication.translate("MainWindow", u"SetUp Rooms, Labs, Halls", None))
         self.computerLabsLabel.setText(QCoreApplication.translate("MainWindow", u"Computer-Labs", None))
         self.bioLabsLabel.setText(QCoreApplication.translate("MainWindow", u"Bio-Labs", None))

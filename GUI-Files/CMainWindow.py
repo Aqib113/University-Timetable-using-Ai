@@ -376,7 +376,9 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
             icon = QIcon()
             icon.addFile(u":/image 4.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
             Del_Lecture_Button.setIcon(icon)
-            Del_Lecture_Button.setIconSize(QSize(20, 20))
+            Del_Lecture_Button.setIconSize(QSize(22, 22))
+            Del_Lecture_Button.setFixedSize(QSize(50,25))
+            Del_Lecture_Button.setStyleSheet(u"padding:10px;")
             
             Del_Lecture_Button.clicked.connect(self.DeleteCurrentLecture)
 
@@ -389,32 +391,46 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
 
             # Increment total lectures counter
             self.Total_Lectures += 1
+        else:
+            self.AddMoreLecture_Button.setEnabled(False)
+        if not self.AddMoreLecture_Button.isEnabled():
+            self.AddMoreLecture_Button.setIcon(QIcon(u":/Add button logo red.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off))
 
     # For Deleting the Lecture Slot
     def DeleteCurrentLecture(self):
-        # checking that which lecture to delete
-        Current_Lecture = int( self.sender().objectName()[-1])
-        # deleting that row (extracted in above line)
+        # Get current lecture index
+        Current_Lecture = int(self.sender().objectName().split('_')[-1])
+        
+        # Remove the row
         self.LectureTable.removeRow(Current_Lecture)
         
-        # now changing the names of all the next widgets in table(to change the idx hidden in their name)
-        for row in range(Current_Lecture+1, self.Total_Lectures):
-            new_idx = row
-            for col in range(0,4):
-                widget = self.LectureTable.itemAt(row,col)
+        # Update remaining widgets
+        for row in range(Current_Lecture, self.Total_Lectures - 1):
+            for col in range(4):
+                widget = self.LectureTable.cellWidget(row, col)
                 if widget:
-                    base_name = '_'.join(widget.objectName().split('_')[:-1])
-                    widget.setObjectName(f'{base_name}_{new_idx}')
+                    # Update object names based on widget type
+                    if isinstance(widget, QTimeEdit):
+                        base_name = 'StartTime' if col == 0 else 'End_Time'
+                        widget.setObjectName(f'{base_name}_{row}')
+                    elif isinstance(widget, QLabel):
+                        widget.setObjectName(f'Total_Time_{row}')
+                    elif isinstance(widget, QPushButton):
+                        widget.setObjectName(f'Del_Lecture_Button_{row}')
         
-        # finally, decrementing the total lectures
-        self.Total_Lectures = self.Total_Lectures-1
+        # Decrement total lectures
+        self.Total_Lectures -= 1
+        
+        # Enable add lecture button if needed
+        if self.Total_Lectures < 10:
+            self.AddMoreLecture_Button.setEnabled(True)
+        if self.AddMoreLecture_Button.isEnabled():
+            self.AddMoreLecture_Button.setIcon(QIcon(u":/Add button logo Black.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off))
     
     # For Updating Total time consumed for lecture
     def UpdateTotalTime(self):
         pass
-                  
-
-        
+    
 # -------------------------------------------------------------------------------------------     
     # ****           Logic Functions For "SetUp Classes" page        *****
     

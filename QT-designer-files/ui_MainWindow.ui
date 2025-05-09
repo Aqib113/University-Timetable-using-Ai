@@ -135,7 +135,7 @@ border-left: 2px solid rgb(0, 0, 0);
              <string/>
             </property>
             <property name="icon">
-             <iconset resource="ui_resources/resource.qrc">
+             <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
               <normaloff>:/final logo2.png</normaloff>:/final logo2.png</iconset>
             </property>
             <property name="iconSize">
@@ -328,7 +328,7 @@ border-radius: 3px;
                    <string/>
                   </property>
                   <property name="icon">
-                   <iconset resource="ui_resources/resource.qrc">
+                   <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                     <normaloff>:/minimize_icon.png</normaloff>:/minimize_icon.png</iconset>
                   </property>
                  </widget>
@@ -351,7 +351,7 @@ border-radius: 3px;
                    <string/>
                   </property>
                   <property name="icon">
-                   <iconset resource="ui_resources/resource.qrc">
+                   <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                     <normaloff>:/fullScreen_icon.png</normaloff>:/fullScreen_icon.png</iconset>
                   </property>
                  </widget>
@@ -377,7 +377,7 @@ border-radius: 3px;
                    <string/>
                   </property>
                   <property name="icon">
-                   <iconset resource="ui_resources/resource.qrc">
+                   <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                     <normaloff>:/Cut_Icon.png</normaloff>:/Cut_Icon.png</iconset>
                   </property>
                  </widget>
@@ -682,7 +682,7 @@ height:40px;
                    <string>  TimeTable</string>
                   </property>
                   <property name="icon">
-                   <iconset resource="ui_resources/resource.qrc">
+                   <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                     <normaloff>:/Timetable logo.png</normaloff>:/Timetable logo.png</iconset>
                   </property>
                   <property name="iconSize">
@@ -730,7 +730,7 @@ padding-left:12px;</string>
                    <string>  Datesheet</string>
                   </property>
                   <property name="icon">
-                   <iconset resource="ui_resources/resource.qrc">
+                   <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                     <normaloff>:/DateSheet logo.png</normaloff>:/DateSheet logo.png</iconset>
                   </property>
                   <property name="iconSize">
@@ -796,7 +796,7 @@ padding-left:12px;</string>
                    <string>  Weekely Days</string>
                   </property>
                   <property name="icon">
-                   <iconset resource="ui_resources/resource.qrc">
+                   <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                     <normaloff>:/Days logo copy2.png</normaloff>:/Days logo copy2.png</iconset>
                   </property>
                   <property name="iconSize">
@@ -846,7 +846,7 @@ padding-left:12px;</string>
                    <string>  Lecture Time </string>
                   </property>
                   <property name="icon">
-                   <iconset resource="ui_resources/resource.qrc">
+                   <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                     <normaloff>:/Time Logo copy2.png</normaloff>:/Time Logo copy2.png</iconset>
                   </property>
                   <property name="iconSize">
@@ -897,7 +897,7 @@ padding-left:12px;</string>
                    <string>  Classes</string>
                   </property>
                   <property name="icon">
-                   <iconset resource="ui_resources/resource.qrc">
+                   <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                     <normaloff>:/Class logo copy2.png</normaloff>:/Class logo copy2.png</iconset>
                   </property>
                   <property name="iconSize">
@@ -947,7 +947,7 @@ padding-left:12px;</string>
                    <string>  Rooms</string>
                   </property>
                   <property name="icon">
-                   <iconset resource="ui_resources/resource.qrc">
+                   <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                     <normaloff>:/Rooms logo copy2.png</normaloff>:/Rooms logo copy2.png</iconset>
                   </property>
                   <property name="iconSize">
@@ -998,7 +998,7 @@ padding-left: 11px;}</string>
                    <string>   Courses</string>
                   </property>
                   <property name="icon">
-                   <iconset resource="ui_resources/resource.qrc">
+                   <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                     <normaloff>:/S &amp; I logo copy2.png</normaloff>:/S &amp; I logo copy2.png</iconset>
                   </property>
                   <property name="iconSize">
@@ -1085,7 +1085,7 @@ font-weight: Bold;
                    <string>  Settings</string>
                   </property>
                   <property name="icon">
-                   <iconset resource="ui_resources/resource.qrc">
+                   <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                     <normaloff>:/settings.png</normaloff>:/settings.png</iconset>
                   </property>
                   <property name="iconSize">
@@ -1144,7 +1144,7 @@ font-weight: Bold;
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="ui_resources/resource.qrc">
+                <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                  <normaloff>:/expand icon copy.png</normaloff>:/expand icon copy.png</iconset>
                </property>
                <property name="iconSize">
@@ -1185,7 +1185,7 @@ background-color: rgb(222, 228, 234)	;
           <number>0</number>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>2</number>
          </property>
          <widget class="QWidget" name="TimetablePage">
           <property name="styleSheet">
@@ -1214,7 +1214,7 @@ font-size:15px;
            <item>
             <widget class="QStackedWidget" name="TimetablePageExtention">
              <property name="currentIndex">
-              <number>0</number>
+              <number>1</number>
              </property>
              <widget class="QWidget" name="ButtonsPage">
               <layout class="QGridLayout" name="gridLayout_10">
@@ -1422,7 +1422,7 @@ padding: 10px;
                         <string/>
                        </property>
                        <property name="icon">
-                        <iconset resource="ui_resources/resource.qrc">
+                        <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                          <normaloff>:/image 4.png</normaloff>:/image 4.png</iconset>
                        </property>
                        <property name="iconSize">
@@ -1725,7 +1725,7 @@ border: 2px solid rgb(255,255,255);
 }</string>
                 </property>
                 <property name="currentIndex">
-                 <number>1</number>
+                 <number>2</number>
                 </property>
                 <widget class="QWidget" name="WorkingDaysPage">
                  <layout class="QVBoxLayout" name="verticalLayout_26">
@@ -2344,7 +2344,7 @@ border-radius: 7px;
                               <string/>
                              </property>
                              <property name="icon">
-                              <iconset resource="ui_resources/resource.qrc">
+                              <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                                <normaloff>:/PreviousLogo.png</normaloff>:/PreviousLogo.png</iconset>
                              </property>
                              <property name="iconSize">
@@ -2469,7 +2469,7 @@ border-radius: 7px;
                               <string/>
                              </property>
                              <property name="icon">
-                              <iconset resource="ui_resources/resource.qrc">
+                              <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                                <normaloff>:/NextLogo.png</normaloff>:/NextLogo.png</iconset>
                              </property>
                              <property name="iconSize">
@@ -2773,22 +2773,13 @@ padding:2px;
                            <number>0</number>
                           </property>
                           <layout class="QVBoxLayout" name="verticalLayout_34">
-                           <property name="leftMargin">
-                            <number>0</number>
-                           </property>
-                           <property name="rightMargin">
-                            <number>0</number>
-                           </property>
-                           <property name="bottomMargin">
-                            <number>0</number>
-                           </property>
                            <item>
                             <widget class="QPushButton" name="AddMoreLecture_Button">
                              <property name="text">
                               <string/>
                              </property>
                              <property name="icon">
-                              <iconset resource="ui_resources/resource.qrc">
+                              <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                                <normaloff>:/Add button logo Black.png</normaloff>:/Add button logo Black.png</iconset>
                              </property>
                              <property name="iconSize">
@@ -2948,7 +2939,7 @@ border-radius: 7px;
                               <string/>
                              </property>
                              <property name="icon">
-                              <iconset resource="ui_resources/resource.qrc">
+                              <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                                <normaloff>:/PreviousLogo.png</normaloff>:/PreviousLogo.png</iconset>
                              </property>
                              <property name="iconSize">
@@ -3073,7 +3064,7 @@ border-radius: 7px;
                               <string/>
                              </property>
                              <property name="icon">
-                              <iconset resource="ui_resources/resource.qrc">
+                              <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
                                <normaloff>:/NextLogo.png</normaloff>:/NextLogo.png</iconset>
                              </property>
                              <property name="iconSize">
@@ -3096,8 +3087,8 @@ border-radius: 7px;
                  </layout>
                 </widget>
                 <widget class="QWidget" name="SetupClasses">
-                 <layout class="QVBoxLayout" name="verticalLayout_19">
-                  <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+                 <layout class="QVBoxLayout" name="verticalLayout_20">
+                  <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
                    <widget class="QFrame" name="SetupClassesFrame1">
                     <property name="minimumSize">
                      <size>
@@ -3111,8 +3102,12 @@ border-radius: 7px;
                       <height>16777215</height>
                      </size>
                     </property>
+                    <property name="autoFillBackground">
+                     <bool>false</bool>
+                    </property>
                     <property name="styleSheet">
-                     <string notr="true">QPushButton{
+                     <string notr="true">
+QPushButton{
 padding:5px;
 background-color:rgb(33, 47, 61);
 }
@@ -3131,15 +3126,12 @@ QTableWidget {
 
 }
 
-QHeaderView::section {
-    background-color:  rgb(255, 255, 255);
-	border: none;
-    color: black;
-    font-weight: 2px;
-    padding: 4px;
-
+QHeaderView::section:horizontal {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #ddd;
 }
-
 QTableWidget::item:selected {
     background-color: #3498db;
     color: white;
@@ -3149,6 +3141,16 @@ QTableWidget::item {
 	background-color:rgba(0,0,0,0.15)	;
     padding: 4px;
     border: none;
+}
+
+#Heading1Frame_3{
+border-left: 3px solid rgb(33, 47, 61);
+padding-left: 10px;
+}
+
+#AddMoreLecture_Button{
+background: none;
+border:none
 }</string>
                     </property>
                     <property name="frameShape">
@@ -3157,28 +3159,81 @@ QTableWidget::item {
                     <property name="frameShadow">
                      <enum>QFrame::Shadow::Raised</enum>
                     </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_20">
-                     <property name="topMargin">
-                      <number>0</number>
-                     </property>
-                     <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
-                      <widget class="QLabel" name="MainHeading">
-                       <property name="font">
-                        <font>
-                         <family>Roboto</family>
-                         <pointsize>26</pointsize>
-                         <bold>true</bold>
-                        </font>
+                    <layout class="QVBoxLayout" name="verticalLayout_19">
+                     <item>
+                      <widget class="QFrame" name="Heading1Frame_3">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::StyledPanel</enum>
                        </property>
-                       <property name="text">
-                        <string>Setting up Classes</string>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Raised</enum>
                        </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_36">
+                        <property name="spacing">
+                         <number>0</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QLabel" name="Heading1_3">
+                          <property name="font">
+                           <font>
+                            <family>Roboto</family>
+                            <pointsize>10</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>Step 2:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="MainLabel_3">
+                          <property name="font">
+                           <font>
+                            <family>Roboto</family>
+                            <pointsize>26</pointsize>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>Setup Lectures and Timings</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_10">
+                          <property name="font">
+                           <font>
+                            <family>Roboto</family>
+                            <pointsize>11</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>Add Lectures and their timings</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
                       </widget>
                      </item>
                      <item>
-                      <spacer name="verticalSpacer_4">
+                      <spacer name="verticalSpacer_3">
                        <property name="orientation">
                         <enum>Qt::Orientation::Vertical</enum>
+                       </property>
+                       <property name="sizeType">
+                        <enum>QSizePolicy::Policy::Minimum</enum>
                        </property>
                        <property name="sizeHint" stdset="0">
                         <size>
@@ -3188,22 +3243,497 @@ QTableWidget::item {
                        </property>
                       </spacer>
                      </item>
-                     <item alignment="Qt::AlignmentFlag::AlignTop">
-                      <widget class="QFrame" name="ClassForm">
-                       <property name="styleSheet">
-                        <string notr="true">QComboBox, QAbstractItemView{
+                     <item>
+                      <widget class="QFrame" name="frame_5">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Raised</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_18">
+                        <item>
+                         <widget class="QFrame" name="frame_6">
+                          <property name="frameShape">
+                           <enum>QFrame::Shape::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Shadow::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_38">
+                           <property name="spacing">
+                            <number>1</number>
+                           </property>
+                           <property name="leftMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item alignment="Qt::AlignmentFlag::AlignTop">
+                            <widget class="QFrame" name="ClassForm">
+                             <property name="contextMenuPolicy">
+                              <enum>Qt::ContextMenuPolicy::DefaultContextMenu</enum>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QComboBox, QAbstractItemView{
 background-color: rgb(255, 255, 255);
 color: rgb(0, 0, 0);
 padding : 10px;
 }
 
 QPushButton{
+Background: none;
 padding:5px;
-background-color: rgb(56, 73, 89);
+border:none;
 }
 
 QPushButton:hover {
 border: 1px solid rgb(255, 255, 255);
+}</string>
+                             </property>
+                             <property name="frameShape">
+                              <enum>QFrame::Shape::StyledPanel</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Shadow::Raised</enum>
+                             </property>
+                             <layout class="QFormLayout" name="formLayout">
+                              <property name="leftMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="topMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="rightMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="bottomMargin">
+                               <number>0</number>
+                              </property>
+                              <item row="0" column="0">
+                               <widget class="QComboBox" name="Department_Input_Combobox">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>190</width>
+                                  <height>0</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>Roboto</family>
+                                  <pointsize>10</pointsize>
+                                 </font>
+                                </property>
+                                <property name="placeholderText">
+                                 <string>Department</string>
+                                </property>
+                                <item>
+                                 <property name="text">
+                                  <string>Computer Science</string>
+                                 </property>
+                                </item>
+                               </widget>
+                              </item>
+                              <item row="1" column="0">
+                               <widget class="QComboBox" name="LevelInput_Combobox">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>190</width>
+                                  <height>0</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>Roboto</family>
+                                  <pointsize>10</pointsize>
+                                 </font>
+                                </property>
+                                <property name="placeholderText">
+                                 <string>Level</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="2" column="0">
+                               <widget class="QComboBox" name="Discipline_Input_Combobox">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>190</width>
+                                  <height>0</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>Roboto</family>
+                                  <pointsize>10</pointsize>
+                                 </font>
+                                </property>
+                                <property name="placeholderText">
+                                 <string>Discipline</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="0" column="1">
+                               <widget class="QPushButton" name="Add_More_Departments">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                                <property name="icon">
+                                 <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
+                                  <normaloff>:/Add button logo Black.png</normaloff>:/Add button logo Black.png</iconset>
+                                </property>
+                                <property name="iconSize">
+                                 <size>
+                                  <width>25</width>
+                                  <height>25</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="1" column="1">
+                               <widget class="QPushButton" name="Add_More_Levels">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                                <property name="icon">
+                                 <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
+                                  <normaloff>:/Add button logo Black.png</normaloff>:/Add button logo Black.png</iconset>
+                                </property>
+                                <property name="iconSize">
+                                 <size>
+                                  <width>25</width>
+                                  <height>25</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="2" column="1">
+                               <widget class="QPushButton" name="Add_More_Disciplines">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                                <property name="icon">
+                                 <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
+                                  <normaloff>:/Add button logo Black.png</normaloff>:/Add button logo Black.png</iconset>
+                                </property>
+                                <property name="iconSize">
+                                 <size>
+                                  <width>25</width>
+                                  <height>25</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
+                            <widget class="QFrame" name="frame_7">
+                             <property name="styleSheet">
+                              <string notr="true">#Class_Settings_Buttons ,#Delete_Class_Button, #Refresh_Class_Form{
+background:transparent;
+border:none;
+}
+</string>
+                             </property>
+                             <property name="frameShape">
+                              <enum>QFrame::Shape::StyledPanel</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Shadow::Raised</enum>
+                             </property>
+                             <layout class="QVBoxLayout" name="verticalLayout_37">
+                              <property name="spacing">
+                               <number>2</number>
+                              </property>
+                              <property name="leftMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="topMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="rightMargin">
+                               <number>19</number>
+                              </property>
+                              <property name="bottomMargin">
+                               <number>0</number>
+                              </property>
+                              <item>
+                               <widget class="QPushButton" name="pushButton_4">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>135</width>
+                                  <height>33</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>Roboto</family>
+                                  <pointsize>10</pointsize>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string>Save</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QFrame" name="frame_8">
+                                <property name="frameShape">
+                                 <enum>QFrame::Shape::StyledPanel</enum>
+                                </property>
+                                <property name="frameShadow">
+                                 <enum>QFrame::Shadow::Raised</enum>
+                                </property>
+                                <layout class="QHBoxLayout" name="horizontalLayout_19">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QPushButton" name="Class_Settings_Buttons">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                   <property name="icon">
+                                    <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
+                                     <normaloff>:/settings Logo Black.png</normaloff>:/settings Logo Black.png</iconset>
+                                   </property>
+                                   <property name="iconSize">
+                                    <size>
+                                     <width>35</width>
+                                     <height>35</height>
+                                    </size>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="Delete_Class_Button">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>Roboto</family>
+                                     <pointsize>10</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                   <property name="icon">
+                                    <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
+                                     <normaloff>:/delete logo red.png</normaloff>:/delete logo red.png</iconset>
+                                   </property>
+                                   <property name="iconSize">
+                                    <size>
+                                     <width>35</width>
+                                     <height>35</height>
+                                    </size>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="Refresh_Class_Form">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                   <property name="icon">
+                                    <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
+                                     <normaloff>:/refresh-svgrepo-com (1).png</normaloff>:/refresh-svgrepo-com (1).png</iconset>
+                                   </property>
+                                   <property name="iconSize">
+                                    <size>
+                                     <width>35</width>
+                                     <height>35</height>
+                                    </size>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_4">
+                          <property name="orientation">
+                           <enum>Qt::Orientation::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QTableWidget" name="SectionTable">
+                          <property name="minimumSize">
+                           <size>
+                            <width>320</width>
+                            <height>266</height>
+                           </size>
+                          </property>
+                          <property name="lineWidth">
+                           <number>5</number>
+                          </property>
+                          <property name="horizontalScrollBarPolicy">
+                           <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+                          </property>
+                          <property name="dragDropMode">
+                           <enum>QAbstractItemView::DragDropMode::InternalMove</enum>
+                          </property>
+                          <property name="rowCount">
+                           <number>7</number>
+                          </property>
+                          <property name="columnCount">
+                           <number>2</number>
+                          </property>
+                          <attribute name="horizontalHeaderVisible">
+                           <bool>true</bool>
+                          </attribute>
+                          <row/>
+                          <row/>
+                          <row/>
+                          <row/>
+                          <row/>
+                          <row/>
+                          <row/>
+                          <column>
+                           <property name="text">
+                            <string>Active semesters</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Sections</string>
+                           </property>
+                          </column>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="BottomButtons_3">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>385</width>
+                         <height>43</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">
+QPushButton{
+text-align:left;
+padding: 5px;
+border:none;
+border-radius:0px;
+}
+
+#NextButton_3{
+border-top-right-radius: 7px;
+border-Bottom-right-radius: 7px;
+}
+
+#PreviousButton_3{
+border-top-left-radius: 7px;
+border-Bottom-left-radius: 7px;
+}
+
+
+QLabel{
+Background-color: rgb(33, 47, 61);
+color:   rgb(240, 255, 253);
+}
+
+#NextButton_Label_3{
+border-bottom-left-radius: 7px;
+border-top-left-radius: 7px;
+padding-left: 5px;
+}
+
+#PreviousButton_Label_3{
+border-top-right-radius: 7px;
+border-Bottom-right-radius: 7px;
+padding-right: 5px;
+}
+
+#NextButtonFrame:hover{
+border: 1px solid rgb(33, 47, 61);
+border-radius: 7px;
+}
+#PreviousButtonFrame:hover{
+border: 1px solid rgb(33, 47, 61);
+border-radius: 7px;
 }</string>
                        </property>
                        <property name="frameShape">
@@ -3212,138 +3742,210 @@ border: 1px solid rgb(255, 255, 255);
                        <property name="frameShadow">
                         <enum>QFrame::Shadow::Raised</enum>
                        </property>
-                       <layout class="QGridLayout" name="gridLayout_2">
-                        <item row="1" column="1">
-                         <widget class="QComboBox" name="DepartmentInput">
-                          <property name="enabled">
-                           <bool>true</bool>
+                       <property name="lineWidth">
+                        <number>0</number>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_15">
+                        <property name="spacing">
+                         <number>0</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>1</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>1</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>1</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>1</number>
+                        </property>
+                        <item>
+                         <widget class="QFrame" name="PreviousButtonFrame_3">
+                          <property name="frameShape">
+                           <enum>QFrame::Shape::StyledPanel</enum>
                           </property>
-                          <property name="sizePolicy">
-                           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                            <horstretch>0</horstretch>
-                            <verstretch>0</verstretch>
-                           </sizepolicy>
+                          <property name="frameShadow">
+                           <enum>QFrame::Shadow::Raised</enum>
                           </property>
-                          <property name="minimumSize">
-                           <size>
-                            <width>260</width>
-                            <height>40</height>
-                           </size>
+                          <property name="lineWidth">
+                           <number>0</number>
                           </property>
-                          <property name="editable">
-                           <bool>false</bool>
-                          </property>
-                          <property name="placeholderText">
-                           <string>Department</string>
-                          </property>
-                         </widget>
-                        </item>
-                        <item row="1" column="2">
-                         <widget class="QComboBox" name="DegreeInput">
-                          <property name="minimumSize">
-                           <size>
-                            <width>260</width>
-                            <height>32</height>
-                           </size>
-                          </property>
-                          <property name="editable">
-                           <bool>false</bool>
-                          </property>
-                          <property name="placeholderText">
-                           <string>Bs / Ms /  etc</string>
-                          </property>
-                          <item>
-                           <property name="text">
-                            <string>BS/MS/FSc etc</string>
+                          <layout class="QHBoxLayout" name="horizontalLayout_16">
+                           <property name="spacing">
+                            <number>0</number>
                            </property>
-                          </item>
+                           <property name="leftMargin">
+                            <number>1</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>1</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>1</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>1</number>
+                           </property>
+                           <item>
+                            <widget class="QPushButton" name="PreviousButton_3">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Roboto</family>
+                               <pointsize>12</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="icon">
+                              <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
+                               <normaloff>:/PreviousLogo.png</normaloff>:/PreviousLogo.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>25</width>
+                               <height>25</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="PreviousButton_Label_3">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>35</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Roboto</family>
+                               <pointsize>12</pointsize>
+                              </font>
+                             </property>
+                             <property name="lineWidth">
+                              <number>0</number>
+                             </property>
+                             <property name="text">
+                              <string>Previous</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="horizontalSpacer_3">
+                             <property name="orientation">
+                              <enum>Qt::Orientation::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                          </layout>
                          </widget>
                         </item>
-                        <item row="2" column="1">
-                         <widget class="QComboBox" name="DisciplineInput">
-                          <property name="minimumSize">
-                           <size>
-                            <width>260</width>
-                            <height>32</height>
-                           </size>
+                        <item>
+                         <widget class="QFrame" name="NextButtonFrame_3">
+                          <property name="frameShape">
+                           <enum>QFrame::Shape::StyledPanel</enum>
                           </property>
-                          <property name="editable">
-                           <bool>false</bool>
+                          <property name="frameShadow">
+                           <enum>QFrame::Shadow::Raised</enum>
                           </property>
-                          <property name="placeholderText">
-                           <string>Discipline</string>
+                          <property name="lineWidth">
+                           <number>0</number>
                           </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_17">
+                           <property name="spacing">
+                            <number>0</number>
+                           </property>
+                           <property name="leftMargin">
+                            <number>1</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>1</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>1</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>1</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="NextButton_Label_3">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>65</width>
+                               <height>35</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Roboto</family>
+                               <pointsize>12</pointsize>
+                              </font>
+                             </property>
+                             <property name="lineWidth">
+                              <number>0</number>
+                             </property>
+                             <property name="text">
+                              <string>Step 3</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="NextButton_3">
+                             <property name="font">
+                              <font>
+                               <family>Roboto</family>
+                               <pointsize>12</pointsize>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true"/>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="icon">
+                              <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
+                               <normaloff>:/NextLogo.png</normaloff>:/NextLogo.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>25</width>
+                               <height>25</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
                          </widget>
                         </item>
                        </layout>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QTableWidget" name="SectionTable">
-                       <property name="lineWidth">
-                        <number>5</number>
-                       </property>
-                       <property name="rowCount">
-                        <number>7</number>
-                       </property>
-                       <property name="columnCount">
-                        <number>2</number>
-                       </property>
-                       <row/>
-                       <row/>
-                       <row/>
-                       <row/>
-                       <row/>
-                       <row/>
-                       <row/>
-                       <column>
-                        <property name="text">
-                         <string>Choose Semester</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>Sections</string>
-                        </property>
-                       </column>
-                      </widget>
-                     </item>
-                     <item>
-                      <spacer name="verticalSpacer_3">
-                       <property name="orientation">
-                        <enum>Qt::Orientation::Vertical</enum>
-                       </property>
-                       <property name="sizeHint" stdset="0">
-                        <size>
-                         <width>20</width>
-                         <height>40</height>
-                        </size>
-                       </property>
-                      </spacer>
-                     </item>
-                     <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                      <widget class="QPushButton" name="pushButton_2">
-                       <property name="minimumSize">
-                        <size>
-                         <width>155</width>
-                         <height>33</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>155</width>
-                         <height>33</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <family>Roboto</family>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>Save</string>
-                       </property>
                       </widget>
                      </item>
                     </layout>
@@ -3661,6 +4263,19 @@ background-color: rgb(33, 47, 61);
         <number>2</number>
        </property>
        <item>
+        <spacer name="FooterHorizontaSpacer1">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
         <widget class="QLabel" name="FooterRoughLabel">
          <property name="font">
           <font>
@@ -3701,19 +4316,6 @@ background-color: rgb(33, 47, 61);
           <string>Developed by &quot;Aqib Maqsood&quot;</string>
          </property>
         </widget>
-       </item>
-       <item>
-        <spacer name="FooterHorizontaSpacer1">
-         <property name="orientation">
-          <enum>Qt::Orientation::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
        </item>
        <item>
         <widget class="QFrame" name="FooterRightLabel">
@@ -3765,7 +4367,7 @@ background-color: rgb(33, 47, 61);
   </widget>
  </widget>
  <resources>
-  <include location="ui_resources/resource.qrc"/>
+  <include location="../ui_resources/Images &amp; Icons/resource.qrc"/>
  </resources>
  <connections/>
 </ui>
