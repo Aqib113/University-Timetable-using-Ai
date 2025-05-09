@@ -12,12 +12,15 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
         self.setWindowFlags(Qt.FramelessWindowHint)
  
         # ******  ***   Connecting ToolBar buttons to their functions **** ******
+        # ````````````````````````````````````````````````````````````````````````
+        
+        # Connecting Window Header Buttons
         self.Close_window_Button.clicked.connect(self.close)
         self.Minimize_Button.clicked.connect(self.showMinimized)
         self.Fullscreen_Button.clicked.connect(self.toggle_maximize)
 
 
-        # ******  ***   navigation of HOME PAGE necessary  buttons **** ******
+        # ******  ***   navigation of HOME PAGE necessary  buttons **** ******# #````````````````````````````````````````````````````````````````````````
         self.LogoButton.clicked.connect(lambda: self.MainContentBody.setCurrentIndex(3))
         self.ContactUsButton.clicked.connect(lambda: self.MainContentBody.setCurrentIndex(4))
         self.SettingButton.clicked.connect(lambda: self.MainContentBody.setCurrentIndex(5))
@@ -26,6 +29,7 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
         
         
         # ******  ***   navigation of Left Manu buttons buttons **** ******
+        #````````````````````````````````````````````````````````````````````````
         self.TimetableButton.clicked.connect(lambda:self.MainContentBody.setCurrentIndex(0))
         self.DatesheetButton.clicked.connect(lambda:self.MainContentBody.setCurrentIndex(1))
         self.SetWeekDays.clicked.connect(self.setWeekDays)
@@ -33,18 +37,23 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
         self.SetClasses.clicked.connect(self.setClasses)
         self.SetCourses.clicked.connect(self.setCourses)
         self.SetRooms.clicked.connect(self.setRooms)
-        self.ExpandMenuButton.clicked.connect(self.expandLeftMenu)
+        self.ExpandMenuButton.clicked.connect(self.ControlLeftMenu)
         
         
         
         
         #  ******  ***   Implementing the TImetable  Page's form **** ******
+        #````````````````````````````````````````````````````````````````````````
+        # Connecting Main screen Button
         self.NewTimetableButton.clicked.connect(lambda: self.TimetablePageExtention.setCurrentIndex(2))
         self.CloseProjectButton.clicked.connect(lambda: self.TimetablePageExtention.setCurrentIndex(0))
         self.StartProjectButton.clicked.connect(self.StartNewProject)
         
         
         #  ******  ***   Implementing the Customized Week Page's form **** ******
+        #````````````````````````````````````````````````````````````````````````
+        
+        # Connecting 'Day (Monday, Tuesday etc)' Button (for updating option of "Optional day" box every click)
         self.day1.checkStateChanged.connect(self.setOptionalDays)
         self.day2.checkStateChanged.connect(self.setOptionalDays)
         self.day3.checkStateChanged.connect(self.setOptionalDays)
@@ -53,17 +62,22 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
         self.day6.checkStateChanged.connect(self.setOptionalDays)
         self.day7.checkStateChanged.connect(self.setOptionalDays)
         
+        # Connecting Button to navigating the next page "SetLectures"
         self.NextButton_1.clicked.connect(self.saveCustomizedWeekForm)
         
-        
+        # Connecting 'Close Project' Button (For closing the current project)
         self.CloseProject_Button.clicked.connect(self.CloseCurrentProject)
         
         
         #  ******  ***   Implmenting Add Lectures page **** ******
+        #````````````````````````````````````````````````````````````````````````
+              
+        #  {-- Settingup the INITIAL STATE of  Lecture-table --}
         
-        #  Settingup the INITIAL STATE of  Lecture-table
+        # setting total lecture counter
         self.Total_Lectures = 0
-
+        
+        # Initializing the table dimensions headers etc
         self.LectureTable.setColumnCount(4)
         self.LectureTable.setHorizontalHeaderLabels(['Start Time', 'End Time', 'Total Time', ''])
         self.LectureTable.horizontalHeader().setStretchLastSection(True)
@@ -71,8 +85,10 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
         self.LectureTable.setColumnWidth(1,105)
         self.LectureTable.setColumnWidth(2,135)
         self.LectureTable.setColumnWidth(3,50)
+        # Setting First row of table
         self.addNewLecture()
         
+        # Connecting 'Add More Lecture' Button
         self.AddMoreLecture_Button.clicked.connect(self.addNewLecture)
         
 
@@ -109,7 +125,7 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
         self.Inputpages.setCurrentIndex(0)
 
     # ---------- For expanding Left Menu
-    def expandLeftMenu(self):
+    def ControlLeftMenu(self):
         LeftMenuButtons = [
             self.DatesheetButton,
             self.TimetableButton,
@@ -120,8 +136,9 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
             self.SetRooms,
             self.SettingButton
         ]
-
+        
         if self.ExpandMenuButton.isChecked():
+            # Now AS if the button if checked It mean the left menu if opened. So now clocing it
             # Logic for Collapsing menu
             for button in LeftMenuButtons:
                 button.setFixedWidth(50)
@@ -138,6 +155,7 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
             self.ExpandMenuButton.setIcon(icon12)
 
         else:
+            # Now AS if the button if checked It mean the left menu if Closed. So now Opening it
             # Expanding menu Logic
             for button in LeftMenuButtons:
                 button.setFixedWidth(157)
@@ -333,7 +351,7 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
 # -------------------------------------------------------------------------------------------     
     # *****          Logic Functions For "Add Lectures" page        *****
     
-    # For Adding New Lecture
+    # For Adding New Lecture Slot
     def addNewLecture(self):
         # First increment row count to add new row
         if self.Total_Lectures<10:
@@ -342,33 +360,61 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
 
             # Create widgets with unique object names
             Start_Time = QTimeEdit()
-            Start_Time.setObjectName(f'StartTime_{self.Total_Lectures+1}')
+            Start_Time.setObjectName(f'StartTime_{self.Total_Lectures}')
             Start_Time.setFixedSize(QSize(100,30))
+            
+            Start_Time.timeChanged.connect(self.UpdateTotalTime)
 
             End_Time = QTimeEdit()
-            End_Time.setObjectName(f'End_Time_{self.Total_Lectures+1}')
+            End_Time.setObjectName(f'End_Time_{self.Total_Lectures}')
 
             Total_Time = QLabel()
-            Total_Time.setObjectName(f'Total_Time_{self.Total_Lectures+1}')
+            Total_Time.setObjectName(f'Total_Time_{self.Total_Lectures}')
 
             Del_Lecture_Button = QPushButton()
-            Del_Lecture_Button.setObjectName(f'Del_Lecture_Button{self.Total_Lectures+1}')
+            Del_Lecture_Button.setObjectName(f'Del_Lecture_Button_{self.Total_Lectures}')
             icon = QIcon()
             icon.addFile(u":/image 4.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
             Del_Lecture_Button.setIcon(icon)
             Del_Lecture_Button.setIconSize(QSize(20, 20))
+            
+            Del_Lecture_Button.clicked.connect(self.DeleteCurrentLecture)
 
 
             # Insert widgets into table
             Elements_to_Insert = [Start_Time, End_Time, Total_Time, Del_Lecture_Button]
-
-            for col, widget in enumerate(Elements_to_Insert):
+            col = [0,1,2,3]
+            for col, widget in zip(col,Elements_to_Insert):
                 self.LectureTable.setCellWidget(self.Total_Lectures, col, widget)
 
             # Increment total lectures counter
             self.Total_Lectures += 1
 
+    # For Deleting the Lecture Slot
+    def DeleteCurrentLecture(self):
+        # checking that which lecture to delete
+        Current_Lecture = int( self.sender().objectName()[-1])
+        # deleting that row (extracted in above line)
+        self.LectureTable.removeRow(Current_Lecture)
+        
+        # now changing the names of all the next widgets in table(to change the idx hidden in their name)
+        for row in range(Current_Lecture+1, self.Total_Lectures):
+            new_idx = row
+            for col in range(0,4):
+                widget = self.LectureTable.itemAt(row,col)
+                if widget:
+                    base_name = '_'.join(widget.objectName().split('_')[:-1])
+                    widget.setObjectName(f'{base_name}_{new_idx}')
+        
+        # finally, decrementing the total lectures
+        self.Total_Lectures = self.Total_Lectures-1
     
+    # For Updating Total time consumed for lecture
+    def UpdateTotalTime(self):
+        pass
+                  
+
+        
 # -------------------------------------------------------------------------------------------     
     # ****           Logic Functions For "SetUp Classes" page        *****
     

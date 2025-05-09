@@ -1,0 +1,43 @@
+<RCC>
+  <qresource>
+    <file>Add button logo Black.png</file>
+    <file>PreviousLogo.png</file>
+    <file>NextLogo.png</file>
+    <file>NextButtonicon.png</file>
+    <file>PrevButtonicon.png</file>
+    <file>DateSheet logo2.png</file>
+    <file>Timetable logo2.png</file>
+    <file>Class logo copy2.png</file>
+    <file>Days logo copy2.png</file>
+    <file>Rooms logo copy2.png</file>
+    <file>S &amp; I logo copy2.png</file>
+    <file>Time Logo copy2.png</file>
+    <file>image 4.png</file>
+    <file>CLose_project_icon.png</file>
+    <file>collapse icon.png</file>
+    <file>expand icon copy.png</file>
+    <file>expand menu.png</file>
+    <file>final logo.png</file>
+    <file>final logo2.png</file>
+    <file>settings.png</file>
+    <file>ChatGPT Image Apr 22, 2025, 07_53_15 AM (1).png</file>
+    <file>Menu_icon blue_2.png</file>
+    <file>Menu_bar_menu.png</file>
+    <file>Menu_icon blue.png</file>
+    <file>closeNotification.png</file>
+    <file>Add button logo white.png</file>
+    <file>Quick Options button.png</file>
+    <file>Add button logo.png</file>
+    <file>Class logo.png</file>
+    <file>Cut_Icon.png</file>
+    <file>DateSheet logo.png</file>
+    <file>Days logo.png</file>
+    <file>fullScreen_icon.png</file>
+    <file>minimize_icon.png</file>
+    <file>Rooms logo.png</file>
+    <file>S &amp; I logo.png</file>
+    <file>Time Logo.png</file>
+    <file>settings Logo.png</file>
+    <file>Timetable logo.png</file>
+  </qresource>
+</RCC>

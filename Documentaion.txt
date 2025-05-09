@@ -1,0 +1,15 @@
+background-color: rgb(240, 255, 253);
+ rgb(33, 47, 61)
+pyside6-rcc.exe resource.qrc -o resource_rc.py
+
+background-color: rgb(222, 228, 234)	;
+
+pyinstaller --onefile --windowed --name=OneClick main.py
+
+
+#LeftMenu{
+background-color: rgb(33, 47, 61);
+border-right: 1px solid rgb(0,0,0);
+border-top:1px solid rgb(0,0,0);
+border-top-right-radius: 50px;
+}
