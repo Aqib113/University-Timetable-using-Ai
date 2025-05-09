@@ -24,12 +24,12 @@ from PySide6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox, QComb
 import resource_rc
 
 class Ui_MainWindow(object):
-    def setupUi(self, main_window):
-        if not main_window.objectName():
-            main_window.setObjectName(u"main_window")
-        main_window.resize(1189, 671)
-        main_window.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
-        main_window.setStyleSheet(u"*{\n"
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(1189, 671)
+        MainWindow.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
+        MainWindow.setStyleSheet(u"*{\n"
 "color: rgb(33, 47, 61);\n"
 "}\n"
 "QPushButton{\n"
@@ -40,33 +40,33 @@ class Ui_MainWindow(object):
 "#centralwidget{\n"
 "background-color: rgb(222, 228, 234);\n"
 "}")
-        self.centralwidget = QWidget(main_window)
+        self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.header_container = QWidget(self.centralwidget)
-        self.header_container.setObjectName(u"header_container")
+        self.Header = QWidget(self.centralwidget)
+        self.Header.setObjectName(u"Header")
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.header_container.sizePolicy().hasHeightForWidth())
-        self.header_container.setSizePolicy(sizePolicy)
+        sizePolicy.setHeightForWidth(self.Header.sizePolicy().hasHeightForWidth())
+        self.Header.setSizePolicy(sizePolicy)
         font = QFont()
         font.setFamilies([u"Roboto"])
-        self.header_container.setFont(font)
-        self.header_container.setStyleSheet(u"*{\n"
+        self.Header.setFont(font)
+        self.Header.setStyleSheet(u"*{\n"
 "background-color: rgb(222, 228, 234);\n"
 "}\n"
 "\n"
 "\n"
 "")
-        self.gridLayout_6 = QGridLayout(self.header_container)
+        self.gridLayout_6 = QGridLayout(self.Header)
         self.gridLayout_6.setObjectName(u"gridLayout_6")
         self.gridLayout_6.setHorizontalSpacing(0)
         self.gridLayout_6.setContentsMargins(0, 0, 0, 0)
-        self.logo = QFrame(self.header_container)
+        self.logo = QFrame(self.Header)
         self.logo.setObjectName(u"logo")
         self.logo.setStyleSheet(u"QPushButton{\n"
 "background-color: rgb(222, 228, 234);\n"
@@ -88,28 +88,28 @@ class Ui_MainWindow(object):
         self.gridLayout_5.setSpacing(0)
         self.gridLayout_5.setObjectName(u"gridLayout_5")
         self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
-        self.logo_btn = QPushButton(self.logo)
-        self.logo_btn.setObjectName(u"logo_btn")
-        self.logo_btn.setMinimumSize(QSize(120, 0))
+        self.LogoButton = QPushButton(self.logo)
+        self.LogoButton.setObjectName(u"LogoButton")
+        self.LogoButton.setMinimumSize(QSize(120, 0))
         icon = QIcon()
         icon.addFile(u":/final logo2.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.logo_btn.setIcon(icon)
-        self.logo_btn.setIconSize(QSize(80, 100))
+        self.LogoButton.setIcon(icon)
+        self.LogoButton.setIconSize(QSize(80, 100))
 
-        self.gridLayout_5.addWidget(self.logo_btn, 0, 0, 1, 1, Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignTop)
+        self.gridLayout_5.addWidget(self.LogoButton, 0, 0, 1, 1, Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignTop)
 
 
         self.gridLayout_6.addWidget(self.logo, 0, 0, 1, 1)
 
-        self.content = QFrame(self.header_container)
+        self.content = QFrame(self.Header)
         self.content.setObjectName(u"content")
-        self.content.setStyleSheet(u"#projectname_lbl{\n"
+        self.content.setStyleSheet(u"#Project_Label{\n"
 "border:none;\n"
 "background-color:none;\n"
 "\n"
 "}\n"
 "\n"
-"#closeproject_btn{\n"
+"#CloseProject_Button{\n"
 "background:none;\n"
 "border:none;\n"
 "}\n"
@@ -134,17 +134,17 @@ class Ui_MainWindow(object):
         self.horizontalLayout_8.setSpacing(0)
         self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
         self.horizontalLayout_8.setContentsMargins(0, 0, 0, 0)
-        self.title_lbl = QLabel(self.headercontent)
-        self.title_lbl.setObjectName(u"title_lbl")
+        self.HeaderMiddleLabel_2 = QLabel(self.headercontent)
+        self.HeaderMiddleLabel_2.setObjectName(u"HeaderMiddleLabel_2")
         font1 = QFont()
         font1.setFamilies([u"Roboto"])
         font1.setPointSize(11)
-        self.title_lbl.setFont(font1)
-        self.title_lbl.setStyleSheet(u"* {\n"
+        self.HeaderMiddleLabel_2.setFont(font1)
+        self.HeaderMiddleLabel_2.setStyleSheet(u"* {\n"
 "	padding: 5px, 0px,5px,0px;\n"
 "}")
 
-        self.horizontalLayout_8.addWidget(self.title_lbl)
+        self.horizontalLayout_8.addWidget(self.HeaderMiddleLabel_2)
 
         self.HeaderSpacer1_4 = QSpacerItem(352, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
@@ -164,7 +164,7 @@ class Ui_MainWindow(object):
 "\n"
 " }\n"
 "\n"
-"#close_btn:hover {\n"
+"#Close_window_Button:hover {\n"
 "	background-color:rgb(255, 0, 0);\n"
 " }")
         self.BarButtons_2.setFrameShape(QFrame.Shape.StyledPanel)
@@ -174,36 +174,36 @@ class Ui_MainWindow(object):
         self.horizontalLayout_4.setSpacing(0)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
-        self.minimize_btn = QPushButton(self.BarButtons_2)
-        self.minimize_btn.setObjectName(u"minimize_btn")
-        self.minimize_btn.setMinimumSize(QSize(37, 34))
-        self.minimize_btn.setMaximumSize(QSize(37, 34))
+        self.Minimize_Button = QPushButton(self.BarButtons_2)
+        self.Minimize_Button.setObjectName(u"Minimize_Button")
+        self.Minimize_Button.setMinimumSize(QSize(37, 34))
+        self.Minimize_Button.setMaximumSize(QSize(37, 34))
         icon1 = QIcon()
         icon1.addFile(u":/minimize_icon.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.minimize_btn.setIcon(icon1)
+        self.Minimize_Button.setIcon(icon1)
 
-        self.horizontalLayout_4.addWidget(self.minimize_btn)
+        self.horizontalLayout_4.addWidget(self.Minimize_Button)
 
-        self.maximize_btn = QPushButton(self.BarButtons_2)
-        self.maximize_btn.setObjectName(u"maximize_btn")
-        self.maximize_btn.setMinimumSize(QSize(37, 34))
-        self.maximize_btn.setMaximumSize(QSize(37, 34))
+        self.Fullscreen_Button = QPushButton(self.BarButtons_2)
+        self.Fullscreen_Button.setObjectName(u"Fullscreen_Button")
+        self.Fullscreen_Button.setMinimumSize(QSize(37, 34))
+        self.Fullscreen_Button.setMaximumSize(QSize(37, 34))
         icon2 = QIcon()
         icon2.addFile(u":/fullScreen_icon.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.maximize_btn.setIcon(icon2)
+        self.Fullscreen_Button.setIcon(icon2)
 
-        self.horizontalLayout_4.addWidget(self.maximize_btn)
+        self.horizontalLayout_4.addWidget(self.Fullscreen_Button)
 
-        self.close_btn = QPushButton(self.BarButtons_2)
-        self.close_btn.setObjectName(u"close_btn")
-        self.close_btn.setMinimumSize(QSize(37, 34))
-        self.close_btn.setMaximumSize(QSize(37, 34))
-        self.close_btn.setStyleSheet(u"")
+        self.Close_window_Button = QPushButton(self.BarButtons_2)
+        self.Close_window_Button.setObjectName(u"Close_window_Button")
+        self.Close_window_Button.setMinimumSize(QSize(37, 34))
+        self.Close_window_Button.setMaximumSize(QSize(37, 34))
+        self.Close_window_Button.setStyleSheet(u"")
         icon3 = QIcon()
         icon3.addFile(u":/Cut_Icon.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.close_btn.setIcon(icon3)
+        self.Close_window_Button.setIcon(icon3)
 
-        self.horizontalLayout_4.addWidget(self.close_btn)
+        self.horizontalLayout_4.addWidget(self.Close_window_Button)
 
 
         self.horizontalLayout_8.addWidget(self.BarButtons_2)
@@ -223,19 +223,19 @@ class Ui_MainWindow(object):
         self.horizontalLayout_9.setSpacing(0)
         self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
         self.horizontalLayout_9.setContentsMargins(0, 0, 0, 0)
-        self.projectname_lbl = QLabel(self.ProjectButtonFrame)
-        self.projectname_lbl.setObjectName(u"projectname_lbl")
-        self.projectname_lbl.setFont(font1)
+        self.Project_Label = QLabel(self.ProjectButtonFrame)
+        self.Project_Label.setObjectName(u"Project_Label")
+        self.Project_Label.setFont(font1)
 
-        self.horizontalLayout_9.addWidget(self.projectname_lbl)
+        self.horizontalLayout_9.addWidget(self.Project_Label)
 
-        self.closeproject_btn = QPushButton(self.ProjectButtonFrame)
-        self.closeproject_btn.setObjectName(u"closeproject_btn")
-        self.closeproject_btn.setMinimumSize(QSize(35, 30))
-        self.closeproject_btn.setFont(font1)
-        self.closeproject_btn.setIconSize(QSize(25, 25))
+        self.CloseProject_Button = QPushButton(self.ProjectButtonFrame)
+        self.CloseProject_Button.setObjectName(u"CloseProject_Button")
+        self.CloseProject_Button.setMinimumSize(QSize(35, 30))
+        self.CloseProject_Button.setFont(font1)
+        self.CloseProject_Button.setIconSize(QSize(25, 25))
 
-        self.horizontalLayout_9.addWidget(self.closeproject_btn)
+        self.horizontalLayout_9.addWidget(self.CloseProject_Button)
 
 
         self.verticalLayout_18.addWidget(self.ProjectButtonFrame, 0, Qt.AlignmentFlag.AlignHCenter)
@@ -244,7 +244,7 @@ class Ui_MainWindow(object):
         self.gridLayout_6.addWidget(self.content, 0, 1, 1, 1, Qt.AlignmentFlag.AlignTop)
 
 
-        self.verticalLayout.addWidget(self.header_container)
+        self.verticalLayout.addWidget(self.Header)
 
         self.Middle = QWidget(self.centralwidget)
         self.Middle.setObjectName(u"Middle")
@@ -258,15 +258,15 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setSpacing(0)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
-        self.menu_left = QFrame(self.Middle)
-        self.menu_left.setObjectName(u"menu_left")
+        self.LeftMenu = QFrame(self.Middle)
+        self.LeftMenu.setObjectName(u"LeftMenu")
         sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Expanding)
         sizePolicy2.setHorizontalStretch(0)
         sizePolicy2.setVerticalStretch(0)
-        sizePolicy2.setHeightForWidth(self.menu_left.sizePolicy().hasHeightForWidth())
-        self.menu_left.setSizePolicy(sizePolicy2)
-        self.menu_left.setMinimumSize(QSize(0, 0))
-        self.menu_left.setStyleSheet(u"* {\n"
+        sizePolicy2.setHeightForWidth(self.LeftMenu.sizePolicy().hasHeightForWidth())
+        self.LeftMenu.setSizePolicy(sizePolicy2)
+        self.LeftMenu.setMinimumSize(QSize(0, 0))
+        self.LeftMenu.setStyleSheet(u"* {\n"
 "color: rgb(255, 255, 255);\n"
 "border:none;\n"
 "}\n"
@@ -280,9 +280,9 @@ class Ui_MainWindow(object):
 "\n"
 "}\n"
 "\n"
-"#expandmenu_btn{\n"
+"#ExpandMenuButton{\n"
 "padding:0px;}\n"
-"#expandmenu_btn:hover{\n"
+"#ExpandMenuButton:hover{\n"
 "border:2px solid rgb(222, 228, 234);\n"
 "padding:0px;}\n"
 "\n"
@@ -300,29 +300,29 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "")
-        self.menu_left.setLineWidth(0)
-        self.horizontalLayout_7 = QHBoxLayout(self.menu_left)
+        self.LeftMenu.setLineWidth(0)
+        self.horizontalLayout_7 = QHBoxLayout(self.LeftMenu)
         self.horizontalLayout_7.setSpacing(0)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.horizontalLayout_7.setContentsMargins(0, 0, 0, 0)
-        self.middle_menu = QFrame(self.menu_left)
-        self.middle_menu.setObjectName(u"middle_menu")
-        sizePolicy1.setHeightForWidth(self.middle_menu.sizePolicy().hasHeightForWidth())
-        self.middle_menu.setSizePolicy(sizePolicy1)
-        self.middle_menu.setStyleSheet(u"#middle_menu{\n"
+        self.middlebuttons = QFrame(self.LeftMenu)
+        self.middlebuttons.setObjectName(u"middlebuttons")
+        sizePolicy1.setHeightForWidth(self.middlebuttons.sizePolicy().hasHeightForWidth())
+        self.middlebuttons.setSizePolicy(sizePolicy1)
+        self.middlebuttons.setStyleSheet(u"#middlebuttons{\n"
 "background-color: rgb(33, 47, 61);\n"
 "border-right: 1px solid rgb(0,0,0);\n"
 "border-top:1px solid rgb(0,0,0);\n"
 "height:40px;\n"
 "}\n"
 "")
-        self.middle_menu.setFrameShape(QFrame.Shape.StyledPanel)
-        self.middle_menu.setFrameShadow(QFrame.Shadow.Raised)
-        self.middle_menu.setLineWidth(0)
-        self.verticalLayout_6 = QVBoxLayout(self.middle_menu)
+        self.middlebuttons.setFrameShape(QFrame.Shape.StyledPanel)
+        self.middlebuttons.setFrameShadow(QFrame.Shadow.Raised)
+        self.middlebuttons.setLineWidth(0)
+        self.verticalLayout_6 = QVBoxLayout(self.middlebuttons)
         self.verticalLayout_6.setObjectName(u"verticalLayout_6")
         self.verticalLayout_6.setContentsMargins(-1, 7, 7, -1)
-        self.MainFeatures = QFrame(self.middle_menu)
+        self.MainFeatures = QFrame(self.middlebuttons)
         self.MainFeatures.setObjectName(u"MainFeatures")
         sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Expanding)
         sizePolicy3.setHorizontalStretch(0)
@@ -338,140 +338,140 @@ class Ui_MainWindow(object):
         self.verticalLayout_5.setSpacing(15)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.verticalLayout_5.setContentsMargins(0, 14, 0, 0)
-        self.timetable_btn = QPushButton(self.MainFeatures)
-        self.timetable_btn.setObjectName(u"timetable_btn")
+        self.TimetableButton = QPushButton(self.MainFeatures)
+        self.TimetableButton.setObjectName(u"TimetableButton")
         sizePolicy4 = QSizePolicy(QSizePolicy.Policy.Maximum, QSizePolicy.Policy.Fixed)
         sizePolicy4.setHorizontalStretch(0)
         sizePolicy4.setVerticalStretch(0)
-        sizePolicy4.setHeightForWidth(self.timetable_btn.sizePolicy().hasHeightForWidth())
-        self.timetable_btn.setSizePolicy(sizePolicy4)
-        self.timetable_btn.setMinimumSize(QSize(0, 0))
-        self.timetable_btn.setMaximumSize(QSize(50, 45))
+        sizePolicy4.setHeightForWidth(self.TimetableButton.sizePolicy().hasHeightForWidth())
+        self.TimetableButton.setSizePolicy(sizePolicy4)
+        self.TimetableButton.setMinimumSize(QSize(0, 0))
+        self.TimetableButton.setMaximumSize(QSize(50, 45))
         font2 = QFont()
         font2.setFamilies([u"Segoe UI"])
         font2.setPointSize(12)
-        self.timetable_btn.setFont(font2)
-        self.timetable_btn.setToolTipDuration(-2)
-        self.timetable_btn.setStyleSheet(u"")
+        self.TimetableButton.setFont(font2)
+        self.TimetableButton.setToolTipDuration(-2)
+        self.TimetableButton.setStyleSheet(u"")
         icon4 = QIcon()
         icon4.addFile(u":/Timetable logo.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.timetable_btn.setIcon(icon4)
-        self.timetable_btn.setIconSize(QSize(30, 30))
-        self.timetable_btn.setCheckable(True)
+        self.TimetableButton.setIcon(icon4)
+        self.TimetableButton.setIconSize(QSize(30, 30))
+        self.TimetableButton.setCheckable(True)
 
-        self.verticalLayout_5.addWidget(self.timetable_btn)
+        self.verticalLayout_5.addWidget(self.TimetableButton)
 
-        self.datesheet_btn = QPushButton(self.MainFeatures)
-        self.datesheet_btn.setObjectName(u"datesheet_btn")
-        sizePolicy.setHeightForWidth(self.datesheet_btn.sizePolicy().hasHeightForWidth())
-        self.datesheet_btn.setSizePolicy(sizePolicy)
-        self.datesheet_btn.setMinimumSize(QSize(0, 0))
-        self.datesheet_btn.setMaximumSize(QSize(50, 45))
-        self.datesheet_btn.setFont(font2)
-        self.datesheet_btn.setStyleSheet(u"\n"
+        self.DatesheetButton = QPushButton(self.MainFeatures)
+        self.DatesheetButton.setObjectName(u"DatesheetButton")
+        sizePolicy.setHeightForWidth(self.DatesheetButton.sizePolicy().hasHeightForWidth())
+        self.DatesheetButton.setSizePolicy(sizePolicy)
+        self.DatesheetButton.setMinimumSize(QSize(0, 0))
+        self.DatesheetButton.setMaximumSize(QSize(50, 45))
+        self.DatesheetButton.setFont(font2)
+        self.DatesheetButton.setStyleSheet(u"\n"
 "padding-left:12px;")
         icon5 = QIcon()
         icon5.addFile(u":/DateSheet logo.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.datesheet_btn.setIcon(icon5)
-        self.datesheet_btn.setIconSize(QSize(32, 32))
-        self.datesheet_btn.setCheckable(True)
-        self.datesheet_btn.setChecked(False)
+        self.DatesheetButton.setIcon(icon5)
+        self.DatesheetButton.setIconSize(QSize(32, 32))
+        self.DatesheetButton.setCheckable(True)
+        self.DatesheetButton.setChecked(False)
 
-        self.verticalLayout_5.addWidget(self.datesheet_btn)
+        self.verticalLayout_5.addWidget(self.DatesheetButton)
 
         self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
         self.verticalLayout_5.addItem(self.verticalSpacer_2)
 
-        self.weekdays_btn = QPushButton(self.MainFeatures)
-        self.weekdays_btn.setObjectName(u"weekdays_btn")
-        self.weekdays_btn.setEnabled(False)
-        sizePolicy4.setHeightForWidth(self.weekdays_btn.sizePolicy().hasHeightForWidth())
-        self.weekdays_btn.setSizePolicy(sizePolicy4)
-        self.weekdays_btn.setMinimumSize(QSize(0, 0))
-        self.weekdays_btn.setMaximumSize(QSize(50, 45))
-        self.weekdays_btn.setFont(font2)
-        self.weekdays_btn.setStyleSheet(u"")
+        self.SetWeekDays = QPushButton(self.MainFeatures)
+        self.SetWeekDays.setObjectName(u"SetWeekDays")
+        self.SetWeekDays.setEnabled(False)
+        sizePolicy4.setHeightForWidth(self.SetWeekDays.sizePolicy().hasHeightForWidth())
+        self.SetWeekDays.setSizePolicy(sizePolicy4)
+        self.SetWeekDays.setMinimumSize(QSize(0, 0))
+        self.SetWeekDays.setMaximumSize(QSize(50, 45))
+        self.SetWeekDays.setFont(font2)
+        self.SetWeekDays.setStyleSheet(u"")
         icon6 = QIcon()
         icon6.addFile(u":/Days logo copy2.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.weekdays_btn.setIcon(icon6)
-        self.weekdays_btn.setIconSize(QSize(30, 30))
-        self.weekdays_btn.setCheckable(True)
+        self.SetWeekDays.setIcon(icon6)
+        self.SetWeekDays.setIconSize(QSize(30, 30))
+        self.SetWeekDays.setCheckable(True)
 
-        self.verticalLayout_5.addWidget(self.weekdays_btn)
+        self.verticalLayout_5.addWidget(self.SetWeekDays)
 
-        self.lectures_btn = QPushButton(self.MainFeatures)
-        self.lectures_btn.setObjectName(u"lectures_btn")
-        self.lectures_btn.setEnabled(False)
-        sizePolicy4.setHeightForWidth(self.lectures_btn.sizePolicy().hasHeightForWidth())
-        self.lectures_btn.setSizePolicy(sizePolicy4)
-        self.lectures_btn.setMinimumSize(QSize(0, 0))
-        self.lectures_btn.setMaximumSize(QSize(50, 45))
-        self.lectures_btn.setFont(font2)
-        self.lectures_btn.setStyleSheet(u"")
+        self.SetLectures = QPushButton(self.MainFeatures)
+        self.SetLectures.setObjectName(u"SetLectures")
+        self.SetLectures.setEnabled(False)
+        sizePolicy4.setHeightForWidth(self.SetLectures.sizePolicy().hasHeightForWidth())
+        self.SetLectures.setSizePolicy(sizePolicy4)
+        self.SetLectures.setMinimumSize(QSize(0, 0))
+        self.SetLectures.setMaximumSize(QSize(50, 45))
+        self.SetLectures.setFont(font2)
+        self.SetLectures.setStyleSheet(u"")
         icon7 = QIcon()
         icon7.addFile(u":/Time Logo copy2.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.lectures_btn.setIcon(icon7)
-        self.lectures_btn.setIconSize(QSize(30, 30))
-        self.lectures_btn.setCheckable(True)
+        self.SetLectures.setIcon(icon7)
+        self.SetLectures.setIconSize(QSize(30, 30))
+        self.SetLectures.setCheckable(True)
 
-        self.verticalLayout_5.addWidget(self.lectures_btn)
+        self.verticalLayout_5.addWidget(self.SetLectures)
 
-        self.classes_btn = QPushButton(self.MainFeatures)
-        self.classes_btn.setObjectName(u"classes_btn")
-        self.classes_btn.setEnabled(False)
-        sizePolicy4.setHeightForWidth(self.classes_btn.sizePolicy().hasHeightForWidth())
-        self.classes_btn.setSizePolicy(sizePolicy4)
-        self.classes_btn.setMinimumSize(QSize(0, 0))
-        self.classes_btn.setMaximumSize(QSize(50, 45))
+        self.SetClasses = QPushButton(self.MainFeatures)
+        self.SetClasses.setObjectName(u"SetClasses")
+        self.SetClasses.setEnabled(False)
+        sizePolicy4.setHeightForWidth(self.SetClasses.sizePolicy().hasHeightForWidth())
+        self.SetClasses.setSizePolicy(sizePolicy4)
+        self.SetClasses.setMinimumSize(QSize(0, 0))
+        self.SetClasses.setMaximumSize(QSize(50, 45))
         font3 = QFont()
         font3.setFamilies([u"Segoe UI"])
         font3.setPointSize(12)
         font3.setItalic(False)
-        self.classes_btn.setFont(font3)
-        self.classes_btn.setStyleSheet(u"")
+        self.SetClasses.setFont(font3)
+        self.SetClasses.setStyleSheet(u"")
         icon8 = QIcon()
         icon8.addFile(u":/Class logo copy2.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.classes_btn.setIcon(icon8)
-        self.classes_btn.setIconSize(QSize(30, 30))
-        self.classes_btn.setCheckable(True)
+        self.SetClasses.setIcon(icon8)
+        self.SetClasses.setIconSize(QSize(30, 30))
+        self.SetClasses.setCheckable(True)
 
-        self.verticalLayout_5.addWidget(self.classes_btn)
+        self.verticalLayout_5.addWidget(self.SetClasses)
 
-        self.rooms_btn = QPushButton(self.MainFeatures)
-        self.rooms_btn.setObjectName(u"rooms_btn")
-        self.rooms_btn.setEnabled(False)
-        sizePolicy4.setHeightForWidth(self.rooms_btn.sizePolicy().hasHeightForWidth())
-        self.rooms_btn.setSizePolicy(sizePolicy4)
-        self.rooms_btn.setMinimumSize(QSize(0, 0))
-        self.rooms_btn.setMaximumSize(QSize(50, 45))
-        self.rooms_btn.setFont(font2)
-        self.rooms_btn.setStyleSheet(u"")
+        self.SetRooms = QPushButton(self.MainFeatures)
+        self.SetRooms.setObjectName(u"SetRooms")
+        self.SetRooms.setEnabled(False)
+        sizePolicy4.setHeightForWidth(self.SetRooms.sizePolicy().hasHeightForWidth())
+        self.SetRooms.setSizePolicy(sizePolicy4)
+        self.SetRooms.setMinimumSize(QSize(0, 0))
+        self.SetRooms.setMaximumSize(QSize(50, 45))
+        self.SetRooms.setFont(font2)
+        self.SetRooms.setStyleSheet(u"")
         icon9 = QIcon()
         icon9.addFile(u":/Rooms logo copy2.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.rooms_btn.setIcon(icon9)
-        self.rooms_btn.setIconSize(QSize(30, 30))
-        self.rooms_btn.setCheckable(True)
+        self.SetRooms.setIcon(icon9)
+        self.SetRooms.setIconSize(QSize(30, 30))
+        self.SetRooms.setCheckable(True)
 
-        self.verticalLayout_5.addWidget(self.rooms_btn)
+        self.verticalLayout_5.addWidget(self.SetRooms)
 
-        self.courses_btn = QPushButton(self.MainFeatures)
-        self.courses_btn.setObjectName(u"courses_btn")
-        self.courses_btn.setEnabled(False)
-        sizePolicy4.setHeightForWidth(self.courses_btn.sizePolicy().hasHeightForWidth())
-        self.courses_btn.setSizePolicy(sizePolicy4)
-        self.courses_btn.setMinimumSize(QSize(0, 0))
-        self.courses_btn.setMaximumSize(QSize(50, 45))
-        self.courses_btn.setFont(font2)
-        self.courses_btn.setStyleSheet(u"*{\n"
+        self.SetCourses = QPushButton(self.MainFeatures)
+        self.SetCourses.setObjectName(u"SetCourses")
+        self.SetCourses.setEnabled(False)
+        sizePolicy4.setHeightForWidth(self.SetCourses.sizePolicy().hasHeightForWidth())
+        self.SetCourses.setSizePolicy(sizePolicy4)
+        self.SetCourses.setMinimumSize(QSize(0, 0))
+        self.SetCourses.setMaximumSize(QSize(50, 45))
+        self.SetCourses.setFont(font2)
+        self.SetCourses.setStyleSheet(u"*{\n"
 "padding-left: 11px;}")
         icon10 = QIcon()
         icon10.addFile(u":/S & I logo copy2.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.courses_btn.setIcon(icon10)
-        self.courses_btn.setIconSize(QSize(30, 30))
-        self.courses_btn.setCheckable(True)
+        self.SetCourses.setIcon(icon10)
+        self.SetCourses.setIconSize(QSize(30, 30))
+        self.SetCourses.setCheckable(True)
 
-        self.verticalLayout_5.addWidget(self.courses_btn)
+        self.verticalLayout_5.addWidget(self.SetCourses)
 
 
         self.verticalLayout_6.addWidget(self.MainFeatures, 0, Qt.AlignmentFlag.AlignTop)
@@ -480,7 +480,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_6.addItem(self.verticalSpacer_7)
 
-        self.OtherButtons = QFrame(self.middle_menu)
+        self.OtherButtons = QFrame(self.middlebuttons)
         self.OtherButtons.setObjectName(u"OtherButtons")
         sizePolicy3.setHeightForWidth(self.OtherButtons.sizePolicy().hasHeightForWidth())
         self.OtherButtons.setSizePolicy(sizePolicy3)
@@ -491,28 +491,28 @@ class Ui_MainWindow(object):
         self.verticalLayout_8.setSpacing(17)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
         self.verticalLayout_8.setContentsMargins(0, 0, 0, 0)
-        self.settings_btn = QPushButton(self.OtherButtons)
-        self.settings_btn.setObjectName(u"settings_btn")
-        self.settings_btn.setMinimumSize(QSize(0, 0))
-        self.settings_btn.setMaximumSize(QSize(50, 45))
-        self.settings_btn.setStyleSheet(u"*{\n"
+        self.SettingButton = QPushButton(self.OtherButtons)
+        self.SettingButton.setObjectName(u"SettingButton")
+        self.SettingButton.setMinimumSize(QSize(0, 0))
+        self.SettingButton.setMaximumSize(QSize(50, 45))
+        self.SettingButton.setStyleSheet(u"*{\n"
 "font-size:14pt;\n"
 "font-weight: Bold;\n"
 "}")
         icon11 = QIcon()
         icon11.addFile(u":/settings.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.settings_btn.setIcon(icon11)
-        self.settings_btn.setIconSize(QSize(27, 27))
+        self.SettingButton.setIcon(icon11)
+        self.SettingButton.setIconSize(QSize(27, 27))
 
-        self.verticalLayout_8.addWidget(self.settings_btn, 0, Qt.AlignmentFlag.AlignBottom)
+        self.verticalLayout_8.addWidget(self.SettingButton, 0, Qt.AlignmentFlag.AlignBottom)
 
 
         self.verticalLayout_6.addWidget(self.OtherButtons)
 
 
-        self.horizontalLayout_7.addWidget(self.middle_menu)
+        self.horizontalLayout_7.addWidget(self.middlebuttons)
 
-        self.frame_2 = QFrame(self.menu_left)
+        self.frame_2 = QFrame(self.LeftMenu)
         self.frame_2.setObjectName(u"frame_2")
         self.frame_2.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame_2.setFrameShadow(QFrame.Shadow.Raised)
@@ -520,37 +520,37 @@ class Ui_MainWindow(object):
         self.verticalLayout_17.setSpacing(0)
         self.verticalLayout_17.setObjectName(u"verticalLayout_17")
         self.verticalLayout_17.setContentsMargins(0, 16, 0, 0)
-        self.expandmenu_btn = QPushButton(self.frame_2)
-        self.expandmenu_btn.setObjectName(u"expandmenu_btn")
-        self.expandmenu_btn.setMinimumSize(QSize(0, 0))
-        self.expandmenu_btn.setMaximumSize(QSize(35, 35))
+        self.ExpandMenuButton = QPushButton(self.frame_2)
+        self.ExpandMenuButton.setObjectName(u"ExpandMenuButton")
+        self.ExpandMenuButton.setMinimumSize(QSize(0, 0))
+        self.ExpandMenuButton.setMaximumSize(QSize(35, 35))
         icon12 = QIcon()
         icon12.addFile(u":/expand icon copy.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.expandmenu_btn.setIcon(icon12)
-        self.expandmenu_btn.setIconSize(QSize(35, 35))
-        self.expandmenu_btn.setCheckable(True)
-        self.expandmenu_btn.setChecked(True)
+        self.ExpandMenuButton.setIcon(icon12)
+        self.ExpandMenuButton.setIconSize(QSize(35, 35))
+        self.ExpandMenuButton.setCheckable(True)
+        self.ExpandMenuButton.setChecked(True)
 
-        self.verticalLayout_17.addWidget(self.expandmenu_btn, 0, Qt.AlignmentFlag.AlignTop)
+        self.verticalLayout_17.addWidget(self.ExpandMenuButton, 0, Qt.AlignmentFlag.AlignTop)
 
 
         self.horizontalLayout_7.addWidget(self.frame_2, 0, Qt.AlignmentFlag.AlignTop)
 
 
-        self.horizontalLayout.addWidget(self.menu_left, 0, Qt.AlignmentFlag.AlignLeft)
+        self.horizontalLayout.addWidget(self.LeftMenu, 0, Qt.AlignmentFlag.AlignLeft)
 
-        self.main_container = QStackedWidget(self.Middle)
-        self.main_container.setObjectName(u"main_container")
-        sizePolicy1.setHeightForWidth(self.main_container.sizePolicy().hasHeightForWidth())
-        self.main_container.setSizePolicy(sizePolicy1)
-        self.main_container.setStyleSheet(u"*{;\n"
+        self.MainContentBody = QStackedWidget(self.Middle)
+        self.MainContentBody.setObjectName(u"MainContentBody")
+        sizePolicy1.setHeightForWidth(self.MainContentBody.sizePolicy().hasHeightForWidth())
+        self.MainContentBody.setSizePolicy(sizePolicy1)
+        self.MainContentBody.setStyleSheet(u"*{;\n"
 "background-color: rgb(222, 228, 234)	;\n"
 "}\n"
 "")
-        self.main_container.setLineWidth(0)
-        self.timetable_view = QWidget()
-        self.timetable_view.setObjectName(u"timetable_view")
-        self.timetable_view.setStyleSheet(u"*{\n"
+        self.MainContentBody.setLineWidth(0)
+        self.TimetablePage = QWidget()
+        self.TimetablePage.setObjectName(u"TimetablePage")
+        self.TimetablePage.setStyleSheet(u"*{\n"
 "background-color:transparent;\n"
 "}\n"
 "\n"
@@ -570,26 +570,26 @@ class Ui_MainWindow(object):
 "border-color:rgb(255, 255, 255);\n"
 "font-size:15px;\n"
 "}")
-        self.verticalLayout_9 = QVBoxLayout(self.timetable_view)
+        self.verticalLayout_9 = QVBoxLayout(self.TimetablePage)
         self.verticalLayout_9.setObjectName(u"verticalLayout_9")
-        self.TimetablePageExtention = QStackedWidget(self.timetable_view)
+        self.TimetablePageExtention = QStackedWidget(self.TimetablePage)
         self.TimetablePageExtention.setObjectName(u"TimetablePageExtention")
         self.ButtonsPage = QWidget()
         self.ButtonsPage.setObjectName(u"ButtonsPage")
         self.gridLayout_10 = QGridLayout(self.ButtonsPage)
         self.gridLayout_10.setObjectName(u"gridLayout_10")
-        self.button_frame = QFrame(self.ButtonsPage)
-        self.button_frame.setObjectName(u"button_frame")
+        self.ButtonFrame = QFrame(self.ButtonsPage)
+        self.ButtonFrame.setObjectName(u"ButtonFrame")
         sizePolicy5 = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
         sizePolicy5.setHorizontalStretch(0)
         sizePolicy5.setVerticalStretch(0)
-        sizePolicy5.setHeightForWidth(self.button_frame.sizePolicy().hasHeightForWidth())
-        self.button_frame.setSizePolicy(sizePolicy5)
+        sizePolicy5.setHeightForWidth(self.ButtonFrame.sizePolicy().hasHeightForWidth())
+        self.ButtonFrame.setSizePolicy(sizePolicy5)
         font4 = QFont()
         font4.setFamilies([u"Roboto"])
         font4.setPointSize(14)
-        self.button_frame.setFont(font4)
-        self.button_frame.setStyleSheet(u"QPushButton{\n"
+        self.ButtonFrame.setFont(font4)
+        self.ButtonFrame.setStyleSheet(u"QPushButton{\n"
 "padding:5px;\n"
 "background-color:rgb(33, 47, 61);\n"
 "}\n"
@@ -599,13 +599,13 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "border:1px solid rgb(255,255,255);\n"
 "}")
-        self.button_frame.setFrameShape(QFrame.Shape.StyledPanel)
-        self.button_frame.setFrameShadow(QFrame.Shadow.Raised)
-        self.verticalLayout_2 = QVBoxLayout(self.button_frame)
+        self.ButtonFrame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.ButtonFrame.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout_2 = QVBoxLayout(self.ButtonFrame)
         self.verticalLayout_2.setSpacing(14)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.NewTimetableButton = QPushButton(self.button_frame)
+        self.NewTimetableButton = QPushButton(self.ButtonFrame)
         self.NewTimetableButton.setObjectName(u"NewTimetableButton")
         self.NewTimetableButton.setMinimumSize(QSize(240, 42))
         self.NewTimetableButton.setMaximumSize(QSize(240, 42))
@@ -616,7 +616,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addWidget(self.NewTimetableButton, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignTop)
 
-        self.OpenButton = QPushButton(self.button_frame)
+        self.OpenButton = QPushButton(self.ButtonFrame)
         self.OpenButton.setObjectName(u"OpenButton")
         self.OpenButton.setMinimumSize(QSize(240, 42))
         self.OpenButton.setMaximumSize(QSize(240, 42))
@@ -625,7 +625,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.addWidget(self.OpenButton, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignBottom)
 
 
-        self.gridLayout_10.addWidget(self.button_frame, 0, 0, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
+        self.gridLayout_10.addWidget(self.ButtonFrame, 0, 0, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.TimetablePageExtention.addWidget(self.ButtonsPage)
         self.Showuppage = QWidget()
@@ -671,15 +671,15 @@ class Ui_MainWindow(object):
 "	border:none;\n"
 "}\n"
 "\n"
-"#startproject_btn{\n"
+"#StartProjectButton{\n"
 "border-radius:0px;\n"
 "padding:0px;\n"
 "}\n"
-"#startproject_btn:hover{\n"
+"#StartProjectButton:hover{\n"
 "border:1px solid rgb(255,255,255);\n"
 "padding:2px;\n"
 "}\n"
-"#projectname_txt{\n"
+"#ProjectNameInput{\n"
 "padding-left:5px;\n"
 "border: 1px solid rgb(33, 47, 61);\n"
 "border-radius:5px;\n"
@@ -740,13 +740,13 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_31.addWidget(self.frame)
 
-        self.projectname_txt = QLineEdit(self.NewProjectForm)
-        self.projectname_txt.setObjectName(u"projectname_txt")
-        self.projectname_txt.setMinimumSize(QSize(200, 30))
-        self.projectname_txt.setMaximumSize(QSize(200, 30))
-        self.projectname_txt.setFont(font1)
+        self.ProjectNameInput = QLineEdit(self.NewProjectForm)
+        self.ProjectNameInput.setObjectName(u"ProjectNameInput")
+        self.ProjectNameInput.setMinimumSize(QSize(200, 30))
+        self.ProjectNameInput.setMaximumSize(QSize(200, 30))
+        self.ProjectNameInput.setFont(font1)
 
-        self.verticalLayout_31.addWidget(self.projectname_txt, 0, Qt.AlignmentFlag.AlignHCenter)
+        self.verticalLayout_31.addWidget(self.ProjectNameInput, 0, Qt.AlignmentFlag.AlignHCenter)
 
 
         self.verticalLayout_30.addWidget(self.NewProjectForm, 0, Qt.AlignmentFlag.AlignHCenter)
@@ -755,11 +755,11 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_30.addItem(self.verticalSpacer_13)
 
-        self.startproject_btn = QPushButton(self.MainFrame)
-        self.startproject_btn.setObjectName(u"startproject_btn")
-        self.startproject_btn.setMinimumSize(QSize(100, 0))
-        self.startproject_btn.setFont(font5)
-        self.startproject_btn.setStyleSheet(u"QPushButton{\n"
+        self.StartProjectButton = QPushButton(self.MainFrame)
+        self.StartProjectButton.setObjectName(u"StartProjectButton")
+        self.StartProjectButton.setMinimumSize(QSize(100, 0))
+        self.StartProjectButton.setFont(font5)
+        self.StartProjectButton.setStyleSheet(u"QPushButton{\n"
 "padding:5px;\n"
 "background-color:rgb(33, 47, 61);\n"
 "}\n"
@@ -769,7 +769,7 @@ class Ui_MainWindow(object):
 "border:1px solid rgb(255,255,255);\n"
 "}")
 
-        self.verticalLayout_30.addWidget(self.startproject_btn, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignBottom)
+        self.verticalLayout_30.addWidget(self.StartProjectButton, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignBottom)
 
 
         self.gridLayout_8.addWidget(self.MainFrame, 0, 0, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
@@ -781,10 +781,10 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_9.addWidget(self.TimetablePageExtention)
 
-        self.main_container.addWidget(self.timetable_view)
-        self.datesheet_view = QWidget()
-        self.datesheet_view.setObjectName(u"datesheet_view")
-        self.datesheet_view.setStyleSheet(u"*{\n"
+        self.MainContentBody.addWidget(self.TimetablePage)
+        self.DatesheetPage = QWidget()
+        self.DatesheetPage.setObjectName(u"DatesheetPage")
+        self.DatesheetPage.setStyleSheet(u"*{\n"
 "background-color:transparent;\n"
 "border-radius: 20px;\n"
 "}\n"
@@ -796,11 +796,11 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "")
-        self.verticalLayout_11 = QVBoxLayout(self.datesheet_view)
+        self.verticalLayout_11 = QVBoxLayout(self.DatesheetPage)
         self.verticalLayout_11.setSpacing(0)
         self.verticalLayout_11.setObjectName(u"verticalLayout_11")
         self.verticalLayout_11.setContentsMargins(0, 0, 0, 0)
-        self.DateSheetFramePage = QFrame(self.datesheet_view)
+        self.DateSheetFramePage = QFrame(self.DatesheetPage)
         self.DateSheetFramePage.setObjectName(u"DateSheetFramePage")
         self.DateSheetFramePage.setStyleSheet(u"QPushButton{\n"
 "padding:5px;\n"
@@ -829,10 +829,10 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_11.addWidget(self.DateSheetFramePage, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
-        self.main_container.addWidget(self.datesheet_view)
-        self.input_view = QWidget()
-        self.input_view.setObjectName(u"input_view")
-        self.input_view.setStyleSheet(u"*{\n"
+        self.MainContentBody.addWidget(self.DatesheetPage)
+        self.UserInputPage = QWidget()
+        self.UserInputPage.setObjectName(u"UserInputPage")
+        self.UserInputPage.setStyleSheet(u"*{\n"
 "background-color:transparent;\n"
 "}\n"
 "QPushButton{\n"
@@ -845,11 +845,11 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "")
-        self.verticalLayout_12 = QVBoxLayout(self.input_view)
+        self.verticalLayout_12 = QVBoxLayout(self.UserInputPage)
         self.verticalLayout_12.setSpacing(0)
         self.verticalLayout_12.setObjectName(u"verticalLayout_12")
         self.verticalLayout_12.setContentsMargins(0, 0, 0, 0)
-        self.MainBodyContent = QWidget(self.input_view)
+        self.MainBodyContent = QWidget(self.UserInputPage)
         self.MainBodyContent.setObjectName(u"MainBodyContent")
         self.MainBodyContent.setStyleSheet(u"")
         self.verticalLayout_13 = QVBoxLayout(self.MainBodyContent)
@@ -866,11 +866,11 @@ class Ui_MainWindow(object):
 "QPushButton:hover{\n"
 "border: 2px solid rgb(255,255,255);\n"
 "}")
-        self.workdays_view = QWidget()
-        self.workdays_view.setObjectName(u"workdays_view")
-        self.verticalLayout_26 = QVBoxLayout(self.workdays_view)
+        self.WorkingDaysPage = QWidget()
+        self.WorkingDaysPage.setObjectName(u"WorkingDaysPage")
+        self.verticalLayout_26 = QVBoxLayout(self.WorkingDaysPage)
         self.verticalLayout_26.setObjectName(u"verticalLayout_26")
-        self.WorkingDayPageFrame = QFrame(self.workdays_view)
+        self.WorkingDayPageFrame = QFrame(self.WorkingDaysPage)
         self.WorkingDayPageFrame.setObjectName(u"WorkingDayPageFrame")
         sizePolicy5.setHeightForWidth(self.WorkingDayPageFrame.sizePolicy().hasHeightForWidth())
         self.WorkingDayPageFrame.setSizePolicy(sizePolicy5)
@@ -1128,12 +1128,12 @@ class Ui_MainWindow(object):
 "border-radius:0px;\n"
 "}\n"
 "\n"
-"#next_btn{\n"
+"#NextButton_1{\n"
 "border-top-right-radius: 7px;\n"
 "border-Bottom-right-radius: 7px;\n"
 "}\n"
 "\n"
-"#previous_btn{\n"
+"#PreviousButton_1{\n"
 "border-top-left-radius: 7px;\n"
 "border-Bottom-left-radius: 7px;\n"
 "}\n"
@@ -1144,13 +1144,13 @@ class Ui_MainWindow(object):
 "color:   rgb(240, 255, 253);\n"
 "}\n"
 "\n"
-"#next_lbl{\n"
+"#NextButton_Label_1{\n"
 "border-bottom-left-radius: 7px;\n"
 "border-top-left-radius: 7px;\n"
 "padding-left: 5px;\n"
 "}\n"
 "\n"
-"#previous_lbl{\n"
+"#PreviousButton_Label_1{\n"
 "border-top-right-radius: 7px;\n"
 "border-Bottom-right-radius: 7px;\n"
 "padding-right: 5px;\n"
@@ -1180,27 +1180,27 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.setSpacing(0)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.horizontalLayout_3.setContentsMargins(1, 1, 1, 1)
-        self.previous_btn = QPushButton(self.PreviousButtonFrame)
-        self.previous_btn.setObjectName(u"previous_btn")
-        sizePolicy5.setHeightForWidth(self.previous_btn.sizePolicy().hasHeightForWidth())
-        self.previous_btn.setSizePolicy(sizePolicy5)
-        self.previous_btn.setFont(font5)
+        self.PreviousButton_1 = QPushButton(self.PreviousButtonFrame)
+        self.PreviousButton_1.setObjectName(u"PreviousButton_1")
+        sizePolicy5.setHeightForWidth(self.PreviousButton_1.sizePolicy().hasHeightForWidth())
+        self.PreviousButton_1.setSizePolicy(sizePolicy5)
+        self.PreviousButton_1.setFont(font5)
         icon14 = QIcon()
         icon14.addFile(u":/PreviousLogo.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.previous_btn.setIcon(icon14)
-        self.previous_btn.setIconSize(QSize(25, 25))
+        self.PreviousButton_1.setIcon(icon14)
+        self.PreviousButton_1.setIconSize(QSize(25, 25))
 
-        self.horizontalLayout_3.addWidget(self.previous_btn)
+        self.horizontalLayout_3.addWidget(self.PreviousButton_1)
 
-        self.previous_lbl = QLabel(self.PreviousButtonFrame)
-        self.previous_lbl.setObjectName(u"previous_lbl")
-        sizePolicy5.setHeightForWidth(self.previous_lbl.sizePolicy().hasHeightForWidth())
-        self.previous_lbl.setSizePolicy(sizePolicy5)
-        self.previous_lbl.setMinimumSize(QSize(0, 35))
-        self.previous_lbl.setFont(font5)
-        self.previous_lbl.setLineWidth(0)
+        self.PreviousButton_Label_1 = QLabel(self.PreviousButtonFrame)
+        self.PreviousButton_Label_1.setObjectName(u"PreviousButton_Label_1")
+        sizePolicy5.setHeightForWidth(self.PreviousButton_Label_1.sizePolicy().hasHeightForWidth())
+        self.PreviousButton_Label_1.setSizePolicy(sizePolicy5)
+        self.PreviousButton_Label_1.setMinimumSize(QSize(0, 35))
+        self.PreviousButton_Label_1.setFont(font5)
+        self.PreviousButton_Label_1.setLineWidth(0)
 
-        self.horizontalLayout_3.addWidget(self.previous_lbl)
+        self.horizontalLayout_3.addWidget(self.PreviousButton_Label_1)
 
 
         self.horizontalLayout_10.addWidget(self.PreviousButtonFrame)
@@ -1218,26 +1218,26 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setSpacing(0)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.horizontalLayout_2.setContentsMargins(1, 1, 1, 1)
-        self.next_lbl = QLabel(self.NextButtonFrame)
-        self.next_lbl.setObjectName(u"next_lbl")
-        sizePolicy5.setHeightForWidth(self.next_lbl.sizePolicy().hasHeightForWidth())
-        self.next_lbl.setSizePolicy(sizePolicy5)
-        self.next_lbl.setMinimumSize(QSize(65, 35))
-        self.next_lbl.setFont(font5)
-        self.next_lbl.setLineWidth(0)
+        self.NextButton_Label_1 = QLabel(self.NextButtonFrame)
+        self.NextButton_Label_1.setObjectName(u"NextButton_Label_1")
+        sizePolicy5.setHeightForWidth(self.NextButton_Label_1.sizePolicy().hasHeightForWidth())
+        self.NextButton_Label_1.setSizePolicy(sizePolicy5)
+        self.NextButton_Label_1.setMinimumSize(QSize(65, 35))
+        self.NextButton_Label_1.setFont(font5)
+        self.NextButton_Label_1.setLineWidth(0)
 
-        self.horizontalLayout_2.addWidget(self.next_lbl)
+        self.horizontalLayout_2.addWidget(self.NextButton_Label_1)
 
-        self.next_btn = QPushButton(self.NextButtonFrame)
-        self.next_btn.setObjectName(u"next_btn")
-        self.next_btn.setFont(font5)
-        self.next_btn.setStyleSheet(u"")
+        self.NextButton_1 = QPushButton(self.NextButtonFrame)
+        self.NextButton_1.setObjectName(u"NextButton_1")
+        self.NextButton_1.setFont(font5)
+        self.NextButton_1.setStyleSheet(u"")
         icon15 = QIcon()
         icon15.addFile(u":/NextLogo.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.next_btn.setIcon(icon15)
-        self.next_btn.setIconSize(QSize(25, 25))
+        self.NextButton_1.setIcon(icon15)
+        self.NextButton_1.setIconSize(QSize(25, 25))
 
-        self.horizontalLayout_2.addWidget(self.next_btn)
+        self.horizontalLayout_2.addWidget(self.NextButton_1)
 
 
         self.horizontalLayout_10.addWidget(self.NextButtonFrame)
@@ -1248,13 +1248,13 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_26.addWidget(self.WorkingDayPageFrame, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignTop)
 
-        self.Inputpages.addWidget(self.workdays_view)
-        self.lecturetime_view = QWidget()
-        self.lecturetime_view.setObjectName(u"lecturetime_view")
-        self.lecturetime_view.setStyleSheet(u"")
-        self.verticalLayout_35 = QVBoxLayout(self.lecturetime_view)
+        self.Inputpages.addWidget(self.WorkingDaysPage)
+        self.LectureTimePage = QWidget()
+        self.LectureTimePage.setObjectName(u"LectureTimePage")
+        self.LectureTimePage.setStyleSheet(u"")
+        self.verticalLayout_35 = QVBoxLayout(self.LectureTimePage)
         self.verticalLayout_35.setObjectName(u"verticalLayout_35")
-        self.LectureTimePageFrame1 = QFrame(self.lecturetime_view)
+        self.LectureTimePageFrame1 = QFrame(self.LectureTimePage)
         self.LectureTimePageFrame1.setObjectName(u"LectureTimePageFrame1")
         self.LectureTimePageFrame1.setMinimumSize(QSize(0, 370))
         self.LectureTimePageFrame1.setMaximumSize(QSize(16777215, 620))
@@ -1300,7 +1300,7 @@ class Ui_MainWindow(object):
 "padding-left: 10px;\n"
 "}\n"
 "\n"
-"#addlecture_btn{\n"
+"#AddMoreLecture_Button{\n"
 "background: none;\n"
 "border:none\n"
 "}\n"
@@ -1352,29 +1352,29 @@ class Ui_MainWindow(object):
         self.frame_3.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_14 = QHBoxLayout(self.frame_3)
         self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
-        self.lectures_tbl = QTableWidget(self.frame_3)
-        if (self.lectures_tbl.columnCount() < 4):
-            self.lectures_tbl.setColumnCount(4)
+        self.LectureTable = QTableWidget(self.frame_3)
+        if (self.LectureTable.columnCount() < 4):
+            self.LectureTable.setColumnCount(4)
         __qtablewidgetitem = QTableWidgetItem()
-        self.lectures_tbl.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        self.LectureTable.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
-        self.lectures_tbl.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        self.LectureTable.setHorizontalHeaderItem(1, __qtablewidgetitem1)
         __qtablewidgetitem2 = QTableWidgetItem()
-        self.lectures_tbl.setHorizontalHeaderItem(2, __qtablewidgetitem2)
+        self.LectureTable.setHorizontalHeaderItem(2, __qtablewidgetitem2)
         __qtablewidgetitem3 = QTableWidgetItem()
         __qtablewidgetitem3.setBackground(QColor(255, 255, 255));
-        self.lectures_tbl.setHorizontalHeaderItem(3, __qtablewidgetitem3)
-        if (self.lectures_tbl.rowCount() < 1):
-            self.lectures_tbl.setRowCount(1)
-        self.lectures_tbl.setObjectName(u"lectures_tbl")
+        self.LectureTable.setHorizontalHeaderItem(3, __qtablewidgetitem3)
+        if (self.LectureTable.rowCount() < 1):
+            self.LectureTable.setRowCount(1)
+        self.LectureTable.setObjectName(u"LectureTable")
         sizePolicy8 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
         sizePolicy8.setHorizontalStretch(0)
         sizePolicy8.setVerticalStretch(0)
-        sizePolicy8.setHeightForWidth(self.lectures_tbl.sizePolicy().hasHeightForWidth())
-        self.lectures_tbl.setSizePolicy(sizePolicy8)
-        self.lectures_tbl.setMinimumSize(QSize(422, 0))
-        self.lectures_tbl.setMaximumSize(QSize(16777215, 16777215))
-        self.lectures_tbl.setStyleSheet(u"QPushButton{\n"
+        sizePolicy8.setHeightForWidth(self.LectureTable.sizePolicy().hasHeightForWidth())
+        self.LectureTable.setSizePolicy(sizePolicy8)
+        self.LectureTable.setMinimumSize(QSize(422, 0))
+        self.LectureTable.setMaximumSize(QSize(16777215, 16777215))
+        self.LectureTable.setStyleSheet(u"QPushButton{\n"
 "background: none;\n"
 "border:none;\n"
 "padding:1px;\n"
@@ -1383,22 +1383,22 @@ class Ui_MainWindow(object):
 "QPushButton:hover{\n"
 "padding:2px;\n"
 "}")
-        self.lectures_tbl.setFrameShape(QFrame.Shape.NoFrame)
-        self.lectures_tbl.setLineWidth(1)
-        self.lectures_tbl.setMidLineWidth(0)
-        self.lectures_tbl.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
-        self.lectures_tbl.setAutoScroll(True)
-        self.lectures_tbl.setDragDropOverwriteMode(False)
-        self.lectures_tbl.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
-        self.lectures_tbl.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
-        self.lectures_tbl.setGridStyle(Qt.PenStyle.NoPen)
-        self.lectures_tbl.setRowCount(1)
-        self.lectures_tbl.horizontalHeader().setVisible(True)
-        self.lectures_tbl.horizontalHeader().setMinimumSectionSize(32)
-        self.lectures_tbl.horizontalHeader().setHighlightSections(True)
-        self.lectures_tbl.verticalHeader().setCascadingSectionResizes(False)
+        self.LectureTable.setFrameShape(QFrame.Shape.NoFrame)
+        self.LectureTable.setLineWidth(1)
+        self.LectureTable.setMidLineWidth(0)
+        self.LectureTable.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        self.LectureTable.setAutoScroll(True)
+        self.LectureTable.setDragDropOverwriteMode(False)
+        self.LectureTable.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
+        self.LectureTable.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
+        self.LectureTable.setGridStyle(Qt.PenStyle.NoPen)
+        self.LectureTable.setRowCount(1)
+        self.LectureTable.horizontalHeader().setVisible(True)
+        self.LectureTable.horizontalHeader().setMinimumSectionSize(32)
+        self.LectureTable.horizontalHeader().setHighlightSections(True)
+        self.LectureTable.verticalHeader().setCascadingSectionResizes(False)
 
-        self.horizontalLayout_14.addWidget(self.lectures_tbl)
+        self.horizontalLayout_14.addWidget(self.LectureTable)
 
         self.frame_4 = QFrame(self.frame_3)
         self.frame_4.setObjectName(u"frame_4")
@@ -1407,14 +1407,14 @@ class Ui_MainWindow(object):
         self.frame_4.setLineWidth(0)
         self.verticalLayout_34 = QVBoxLayout(self.frame_4)
         self.verticalLayout_34.setObjectName(u"verticalLayout_34")
-        self.addlecture_btn = QPushButton(self.frame_4)
-        self.addlecture_btn.setObjectName(u"addlecture_btn")
+        self.AddMoreLecture_Button = QPushButton(self.frame_4)
+        self.AddMoreLecture_Button.setObjectName(u"AddMoreLecture_Button")
         icon16 = QIcon()
         icon16.addFile(u":/Add button logo Black.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.addlecture_btn.setIcon(icon16)
-        self.addlecture_btn.setIconSize(QSize(25, 25))
+        self.AddMoreLecture_Button.setIcon(icon16)
+        self.AddMoreLecture_Button.setIconSize(QSize(25, 25))
 
-        self.verticalLayout_34.addWidget(self.addlecture_btn)
+        self.verticalLayout_34.addWidget(self.AddMoreLecture_Button)
 
 
         self.horizontalLayout_14.addWidget(self.frame_4, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
@@ -1555,12 +1555,12 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_35.addWidget(self.LectureTimePageFrame1, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignTop)
 
-        self.Inputpages.addWidget(self.lecturetime_view)
-        self.classes_view = QWidget()
-        self.classes_view.setObjectName(u"classes_view")
-        self.verticalLayout_20 = QVBoxLayout(self.classes_view)
+        self.Inputpages.addWidget(self.LectureTimePage)
+        self.SetupClasses = QWidget()
+        self.SetupClasses.setObjectName(u"SetupClasses")
+        self.verticalLayout_20 = QVBoxLayout(self.SetupClasses)
         self.verticalLayout_20.setObjectName(u"verticalLayout_20")
-        self.SetupClassesFrame1 = QFrame(self.classes_view)
+        self.SetupClassesFrame1 = QFrame(self.SetupClasses)
         self.SetupClassesFrame1.setObjectName(u"SetupClassesFrame1")
         self.SetupClassesFrame1.setMinimumSize(QSize(0, 370))
         self.SetupClassesFrame1.setMaximumSize(QSize(16777215, 16777215))
@@ -1607,7 +1607,7 @@ class Ui_MainWindow(object):
 "padding-left: 10px;\n"
 "}\n"
 "\n"
-"#addlecture_btn{\n"
+"#AddMoreLecture_Button{\n"
 "background: none;\n"
 "border:none\n"
 "}")
@@ -1685,27 +1685,27 @@ class Ui_MainWindow(object):
         self.formLayout = QFormLayout(self.ClassForm)
         self.formLayout.setObjectName(u"formLayout")
         self.formLayout.setContentsMargins(0, 0, 0, 0)
-        self.department_cmb = QComboBox(self.ClassForm)
-        self.department_cmb.addItem("")
-        self.department_cmb.setObjectName(u"department_cmb")
-        self.department_cmb.setMinimumSize(QSize(190, 0))
-        self.department_cmb.setFont(font11)
+        self.Department_Input_Combobox = QComboBox(self.ClassForm)
+        self.Department_Input_Combobox.addItem("")
+        self.Department_Input_Combobox.setObjectName(u"Department_Input_Combobox")
+        self.Department_Input_Combobox.setMinimumSize(QSize(190, 0))
+        self.Department_Input_Combobox.setFont(font11)
 
-        self.formLayout.setWidget(0, QFormLayout.LabelRole, self.department_cmb)
+        self.formLayout.setWidget(0, QFormLayout.LabelRole, self.Department_Input_Combobox)
 
-        self.level_cmb = QComboBox(self.ClassForm)
-        self.level_cmb.setObjectName(u"level_cmb")
-        self.level_cmb.setMinimumSize(QSize(190, 0))
-        self.level_cmb.setFont(font11)
+        self.LevelInput_Combobox = QComboBox(self.ClassForm)
+        self.LevelInput_Combobox.setObjectName(u"LevelInput_Combobox")
+        self.LevelInput_Combobox.setMinimumSize(QSize(190, 0))
+        self.LevelInput_Combobox.setFont(font11)
 
-        self.formLayout.setWidget(1, QFormLayout.LabelRole, self.level_cmb)
+        self.formLayout.setWidget(1, QFormLayout.LabelRole, self.LevelInput_Combobox)
 
-        self.discipline_cmb = QComboBox(self.ClassForm)
-        self.discipline_cmb.setObjectName(u"discipline_cmb")
-        self.discipline_cmb.setMinimumSize(QSize(190, 0))
-        self.discipline_cmb.setFont(font11)
+        self.Discipline_Input_Combobox = QComboBox(self.ClassForm)
+        self.Discipline_Input_Combobox.setObjectName(u"Discipline_Input_Combobox")
+        self.Discipline_Input_Combobox.setMinimumSize(QSize(190, 0))
+        self.Discipline_Input_Combobox.setFont(font11)
 
-        self.formLayout.setWidget(2, QFormLayout.LabelRole, self.discipline_cmb)
+        self.formLayout.setWidget(2, QFormLayout.LabelRole, self.Discipline_Input_Combobox)
 
         self.Add_More_Departments = QPushButton(self.ClassForm)
         self.Add_More_Departments.setObjectName(u"Add_More_Departments")
@@ -1817,25 +1817,25 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_18.addItem(self.horizontalSpacer_4)
 
-        self.sections_tbl = QTableWidget(self.frame_5)
-        if (self.sections_tbl.columnCount() < 2):
-            self.sections_tbl.setColumnCount(2)
+        self.SectionTable = QTableWidget(self.frame_5)
+        if (self.SectionTable.columnCount() < 2):
+            self.SectionTable.setColumnCount(2)
         __qtablewidgetitem4 = QTableWidgetItem()
-        self.sections_tbl.setHorizontalHeaderItem(0, __qtablewidgetitem4)
+        self.SectionTable.setHorizontalHeaderItem(0, __qtablewidgetitem4)
         __qtablewidgetitem5 = QTableWidgetItem()
-        self.sections_tbl.setHorizontalHeaderItem(1, __qtablewidgetitem5)
-        if (self.sections_tbl.rowCount() < 7):
-            self.sections_tbl.setRowCount(7)
-        self.sections_tbl.setObjectName(u"sections_tbl")
-        self.sections_tbl.setMinimumSize(QSize(320, 266))
-        self.sections_tbl.setLineWidth(5)
-        self.sections_tbl.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
-        self.sections_tbl.setDragDropMode(QAbstractItemView.DragDropMode.InternalMove)
-        self.sections_tbl.setRowCount(7)
-        self.sections_tbl.setColumnCount(2)
-        self.sections_tbl.horizontalHeader().setVisible(True)
+        self.SectionTable.setHorizontalHeaderItem(1, __qtablewidgetitem5)
+        if (self.SectionTable.rowCount() < 7):
+            self.SectionTable.setRowCount(7)
+        self.SectionTable.setObjectName(u"SectionTable")
+        self.SectionTable.setMinimumSize(QSize(320, 266))
+        self.SectionTable.setLineWidth(5)
+        self.SectionTable.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
+        self.SectionTable.setDragDropMode(QAbstractItemView.DragDropMode.InternalMove)
+        self.SectionTable.setRowCount(7)
+        self.SectionTable.setColumnCount(2)
+        self.SectionTable.horizontalHeader().setVisible(True)
 
-        self.horizontalLayout_18.addWidget(self.sections_tbl)
+        self.horizontalLayout_18.addWidget(self.SectionTable)
 
 
         self.verticalLayout_19.addWidget(self.frame_5)
@@ -1969,12 +1969,12 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_20.addWidget(self.SetupClassesFrame1, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignTop)
 
-        self.Inputpages.addWidget(self.classes_view)
-        self.rooms_view = QWidget()
-        self.rooms_view.setObjectName(u"rooms_view")
-        self.gridLayout_3 = QGridLayout(self.rooms_view)
+        self.Inputpages.addWidget(self.SetupClasses)
+        self.SetUpRooms = QWidget()
+        self.SetUpRooms.setObjectName(u"SetUpRooms")
+        self.gridLayout_3 = QGridLayout(self.SetUpRooms)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
-        self.SetupRoomsPageFrame1 = QFrame(self.rooms_view)
+        self.SetupRoomsPageFrame1 = QFrame(self.SetUpRooms)
         self.SetupRoomsPageFrame1.setObjectName(u"SetupRoomsPageFrame1")
         self.SetupRoomsPageFrame1.setStyleSheet(u"QLabels{\n"
 "font-size: 14px;\n"
@@ -2075,7 +2075,7 @@ class Ui_MainWindow(object):
 
         self.gridLayout_3.addWidget(self.SetupRoomsPageFrame1, 0, 0, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
-        self.Inputpages.addWidget(self.rooms_view)
+        self.Inputpages.addWidget(self.SetUpRooms)
         self.SetLecturers = QWidget()
         self.SetLecturers.setObjectName(u"SetLecturers")
         self.verticalLayout_3 = QVBoxLayout(self.SetLecturers)
@@ -2105,7 +2105,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_12.addWidget(self.MainBodyContent)
 
-        self.main_container.addWidget(self.input_view)
+        self.MainContentBody.addWidget(self.UserInputPage)
         self.IntroPage = QWidget()
         self.IntroPage.setObjectName(u"IntroPage")
         self.verticalLayout_21 = QVBoxLayout(self.IntroPage)
@@ -2123,7 +2123,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_21.addWidget(self.widget)
 
-        self.main_container.addWidget(self.IntroPage)
+        self.MainContentBody.addWidget(self.IntroPage)
         self.ContactUsPage = QWidget()
         self.ContactUsPage.setObjectName(u"ContactUsPage")
         self.verticalLayout_24 = QVBoxLayout(self.ContactUsPage)
@@ -2141,7 +2141,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_24.addWidget(self.widget_2)
 
-        self.main_container.addWidget(self.ContactUsPage)
+        self.MainContentBody.addWidget(self.ContactUsPage)
         self.SettingsPage = QWidget()
         self.SettingsPage.setObjectName(u"SettingsPage")
         self.verticalLayout_25 = QVBoxLayout(self.SettingsPage)
@@ -2152,22 +2152,22 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_25.addWidget(self.label_2, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
-        self.main_container.addWidget(self.SettingsPage)
+        self.MainContentBody.addWidget(self.SettingsPage)
 
-        self.horizontalLayout.addWidget(self.main_container)
+        self.horizontalLayout.addWidget(self.MainContentBody)
 
 
         self.verticalLayout.addWidget(self.Middle)
 
-        self.footer_container = QWidget(self.centralwidget)
-        self.footer_container.setObjectName(u"footer_container")
-        sizePolicy.setHeightForWidth(self.footer_container.sizePolicy().hasHeightForWidth())
-        self.footer_container.setSizePolicy(sizePolicy)
-        self.footer_container.setStyleSheet(u"*{color: rgb(255, 255, 255);\n"
+        self.Footer = QWidget(self.centralwidget)
+        self.Footer.setObjectName(u"Footer")
+        sizePolicy.setHeightForWidth(self.Footer.sizePolicy().hasHeightForWidth())
+        self.Footer.setSizePolicy(sizePolicy)
+        self.Footer.setStyleSheet(u"*{color: rgb(255, 255, 255);\n"
 "background-color: rgb(33, 47, 61);\n"
 "\n"
 "}")
-        self.horizontalLayout_5 = QHBoxLayout(self.footer_container)
+        self.horizontalLayout_5 = QHBoxLayout(self.Footer)
         self.horizontalLayout_5.setSpacing(2)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
         self.horizontalLayout_5.setContentsMargins(2, 2, 5, 2)
@@ -2175,7 +2175,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_5.addItem(self.FooterHorizontaSpacer1)
 
-        self.FooterRoughLabel = QLabel(self.footer_container)
+        self.FooterRoughLabel = QLabel(self.Footer)
         self.FooterRoughLabel.setObjectName(u"FooterRoughLabel")
         font14 = QFont()
         font14.setFamilies([u"Roboto"])
@@ -2190,13 +2190,13 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_5.addItem(self.FooterHorizontaSpacer2)
 
-        self.footer_lbl = QLabel(self.footer_container)
-        self.footer_lbl.setObjectName(u"footer_lbl")
-        self.footer_lbl.setFont(font)
+        self.FooterMiddleLabel = QLabel(self.Footer)
+        self.FooterMiddleLabel.setObjectName(u"FooterMiddleLabel")
+        self.FooterMiddleLabel.setFont(font)
 
-        self.horizontalLayout_5.addWidget(self.footer_lbl)
+        self.horizontalLayout_5.addWidget(self.FooterMiddleLabel)
 
-        self.FooterRightLabel = QFrame(self.footer_container)
+        self.FooterRightLabel = QFrame(self.Footer)
         self.FooterRightLabel.setObjectName(u"FooterRightLabel")
         self.FooterRightLabel.setStyleSheet(u"")
         self.FooterRightLabel.setFrameShape(QFrame.Shape.StyledPanel)
@@ -2205,129 +2205,129 @@ class Ui_MainWindow(object):
         self.horizontalLayout_6.setSpacing(0)
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
         self.horizontalLayout_6.setContentsMargins(0, 0, 0, 0)
-        self.contactus_btn = QPushButton(self.FooterRightLabel)
-        self.contactus_btn.setObjectName(u"contactus_btn")
+        self.ContactUsButton = QPushButton(self.FooterRightLabel)
+        self.ContactUsButton.setObjectName(u"ContactUsButton")
         font15 = QFont()
         font15.setFamilies([u"Roboto"])
         font15.setUnderline(True)
-        self.contactus_btn.setFont(font15)
+        self.ContactUsButton.setFont(font15)
 
-        self.horizontalLayout_6.addWidget(self.contactus_btn)
+        self.horizontalLayout_6.addWidget(self.ContactUsButton)
 
 
         self.horizontalLayout_5.addWidget(self.FooterRightLabel)
 
 
-        self.verticalLayout.addWidget(self.footer_container)
+        self.verticalLayout.addWidget(self.Footer)
 
-        main_window.setCentralWidget(self.centralwidget)
+        MainWindow.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(main_window)
+        self.retranslateUi(MainWindow)
 
-        self.main_container.setCurrentIndex(2)
+        self.MainContentBody.setCurrentIndex(2)
         self.TimetablePageExtention.setCurrentIndex(1)
         self.Inputpages.setCurrentIndex(2)
 
 
-        QMetaObject.connectSlotsByName(main_window)
+        QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
 
-    def retranslateUi(self, main_window):
-        main_window.setWindowTitle(QCoreApplication.translate("main_window", u"main_window", None))
-        self.logo_btn.setText("")
-        self.title_lbl.setText(QCoreApplication.translate("main_window", u"   Ai-Powered University Timetable", None))
-        self.minimize_btn.setText("")
-        self.maximize_btn.setText("")
-        self.close_btn.setText("")
-        self.projectname_lbl.setText("")
-        self.closeproject_btn.setText("")
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.LogoButton.setText("")
+        self.HeaderMiddleLabel_2.setText(QCoreApplication.translate("MainWindow", u"   Ai-Powered University Timetable", None))
+        self.Minimize_Button.setText("")
+        self.Fullscreen_Button.setText("")
+        self.Close_window_Button.setText("")
+        self.Project_Label.setText("")
+        self.CloseProject_Button.setText("")
 #if QT_CONFIG(tooltip)
-        self.timetable_btn.setToolTip(QCoreApplication.translate("main_window", u"<html><head/><body><p align=\"center\"><span style=\" font-size:9pt; color:#ffffff;\">Timetable(click to start)</span></p></body></html>", None))
+        self.TimetableButton.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:9pt; color:#ffffff;\">Timetable(click to start)</span></p></body></html>", None))
 #endif // QT_CONFIG(tooltip)
-        self.timetable_btn.setText(QCoreApplication.translate("main_window", u"  TimeTable", None))
-        self.datesheet_btn.setText(QCoreApplication.translate("main_window", u"  Datesheet", None))
-        self.weekdays_btn.setText(QCoreApplication.translate("main_window", u"  Weekely Days", None))
-        self.lectures_btn.setText(QCoreApplication.translate("main_window", u"  Lecture Time ", None))
-        self.classes_btn.setText(QCoreApplication.translate("main_window", u"  Classes", None))
-        self.rooms_btn.setText(QCoreApplication.translate("main_window", u"  Rooms", None))
-        self.courses_btn.setText(QCoreApplication.translate("main_window", u"   Courses", None))
-        self.settings_btn.setText(QCoreApplication.translate("main_window", u"  Settings", None))
-        self.expandmenu_btn.setText("")
-        self.NewTimetableButton.setText(QCoreApplication.translate("main_window", u"New Project", None))
-        self.OpenButton.setText(QCoreApplication.translate("main_window", u"Open", None))
-        self.label_5.setText(QCoreApplication.translate("main_window", u"MainTime table will be here", None))
+        self.TimetableButton.setText(QCoreApplication.translate("MainWindow", u"  TimeTable", None))
+        self.DatesheetButton.setText(QCoreApplication.translate("MainWindow", u"  Datesheet", None))
+        self.SetWeekDays.setText(QCoreApplication.translate("MainWindow", u"  Weekely Days", None))
+        self.SetLectures.setText(QCoreApplication.translate("MainWindow", u"  Lecture Time ", None))
+        self.SetClasses.setText(QCoreApplication.translate("MainWindow", u"  Classes", None))
+        self.SetRooms.setText(QCoreApplication.translate("MainWindow", u"  Rooms", None))
+        self.SetCourses.setText(QCoreApplication.translate("MainWindow", u"   Courses", None))
+        self.SettingButton.setText(QCoreApplication.translate("MainWindow", u"  Settings", None))
+        self.ExpandMenuButton.setText("")
+        self.NewTimetableButton.setText(QCoreApplication.translate("MainWindow", u"New Project", None))
+        self.OpenButton.setText(QCoreApplication.translate("MainWindow", u"Open", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"MainTime table will be here", None))
         self.CloseProjectButton.setText("")
-        self.Heading.setText(QCoreApplication.translate("main_window", u"Enter Project Name", None))
-        self.label_8.setText(QCoreApplication.translate("main_window", u"Your Timetable will be saved with same name specified here.", None))
-        self.startproject_btn.setText(QCoreApplication.translate("main_window", u"Ok", None))
-        self.PageTitle_2.setText(QCoreApplication.translate("main_window", u"Date sheet options", None))
-        self.Heading1.setText(QCoreApplication.translate("main_window", u"Step 1:", None))
-        self.MainLabel.setText(QCoreApplication.translate("main_window", u"Customize Your Week", None))
-        self.Heading2.setText(QCoreApplication.translate("main_window", u"Select Working days", None))
-        self.day1.setText(QCoreApplication.translate("main_window", u"Monday", None))
-        self.day7.setText(QCoreApplication.translate("main_window", u"Sunday", None))
-        self.day4.setText(QCoreApplication.translate("main_window", u"Thursday", None))
-        self.day6.setText(QCoreApplication.translate("main_window", u"Saturday", None))
-        self.day2.setText(QCoreApplication.translate("main_window", u"Tuesday", None))
-        self.day5.setText(QCoreApplication.translate("main_window", u"Friday", None))
-        self.day3.setText(QCoreApplication.translate("main_window", u"Wednesday", None))
-        self.OptionalDayLabel.setText(QCoreApplication.translate("main_window", u"Setup additional working day to arrange makeup lectures", None))
-        self.OptioanlDayInput.setPlaceholderText(QCoreApplication.translate("main_window", u"Optional day", None))
-        self.previous_btn.setText("")
-        self.previous_lbl.setText(QCoreApplication.translate("main_window", u"Previous", None))
-        self.next_lbl.setText(QCoreApplication.translate("main_window", u"Step 2", None))
-        self.next_btn.setText("")
-        self.Heading1_2.setText(QCoreApplication.translate("main_window", u"Step 2:", None))
-        self.MainLabel_2.setText(QCoreApplication.translate("main_window", u"Setup Lectures and Timings", None))
-        self.label_9.setText(QCoreApplication.translate("main_window", u"Add Lectures and their timings", None))
-        ___qtablewidgetitem = self.lectures_tbl.horizontalHeaderItem(0)
-        ___qtablewidgetitem.setText(QCoreApplication.translate("main_window", u"Start Time", None));
-        ___qtablewidgetitem1 = self.lectures_tbl.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("main_window", u"End Time", None));
-        ___qtablewidgetitem2 = self.lectures_tbl.horizontalHeaderItem(2)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("main_window", u"New Column", None));
-        ___qtablewidgetitem3 = self.lectures_tbl.horizontalHeaderItem(3)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("main_window", u"DelLecture", None));
-        self.addlecture_btn.setText("")
+        self.Heading.setText(QCoreApplication.translate("MainWindow", u"Enter Project Name", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"Your Timetable will be saved with same name specified here.", None))
+        self.StartProjectButton.setText(QCoreApplication.translate("MainWindow", u"Ok", None))
+        self.PageTitle_2.setText(QCoreApplication.translate("MainWindow", u"Date sheet options", None))
+        self.Heading1.setText(QCoreApplication.translate("MainWindow", u"Step 1:", None))
+        self.MainLabel.setText(QCoreApplication.translate("MainWindow", u"Customize Your Week", None))
+        self.Heading2.setText(QCoreApplication.translate("MainWindow", u"Select Working days", None))
+        self.day1.setText(QCoreApplication.translate("MainWindow", u"Monday", None))
+        self.day7.setText(QCoreApplication.translate("MainWindow", u"Sunday", None))
+        self.day4.setText(QCoreApplication.translate("MainWindow", u"Thursday", None))
+        self.day6.setText(QCoreApplication.translate("MainWindow", u"Saturday", None))
+        self.day2.setText(QCoreApplication.translate("MainWindow", u"Tuesday", None))
+        self.day5.setText(QCoreApplication.translate("MainWindow", u"Friday", None))
+        self.day3.setText(QCoreApplication.translate("MainWindow", u"Wednesday", None))
+        self.OptionalDayLabel.setText(QCoreApplication.translate("MainWindow", u"Setup additional working day to arrange makeup lectures", None))
+        self.OptioanlDayInput.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Optional day", None))
+        self.PreviousButton_1.setText("")
+        self.PreviousButton_Label_1.setText(QCoreApplication.translate("MainWindow", u"Previous", None))
+        self.NextButton_Label_1.setText(QCoreApplication.translate("MainWindow", u"Step 2", None))
+        self.NextButton_1.setText("")
+        self.Heading1_2.setText(QCoreApplication.translate("MainWindow", u"Step 2:", None))
+        self.MainLabel_2.setText(QCoreApplication.translate("MainWindow", u"Setup Lectures and Timings", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Add Lectures and their timings", None))
+        ___qtablewidgetitem = self.LectureTable.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Start Time", None));
+        ___qtablewidgetitem1 = self.LectureTable.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"End Time", None));
+        ___qtablewidgetitem2 = self.LectureTable.horizontalHeaderItem(2)
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"New Column", None));
+        ___qtablewidgetitem3 = self.LectureTable.horizontalHeaderItem(3)
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"DelLecture", None));
+        self.AddMoreLecture_Button.setText("")
         self.PreviousButton_2.setText("")
-        self.PreviousButton_Label_2.setText(QCoreApplication.translate("main_window", u"Previous", None))
-        self.NextButton_Label_2.setText(QCoreApplication.translate("main_window", u"Step 3", None))
+        self.PreviousButton_Label_2.setText(QCoreApplication.translate("MainWindow", u"Previous", None))
+        self.NextButton_Label_2.setText(QCoreApplication.translate("MainWindow", u"Step 3", None))
         self.NextButton_2.setText("")
-        self.Heading1_3.setText(QCoreApplication.translate("main_window", u"Step 2:", None))
-        self.MainLabel_3.setText(QCoreApplication.translate("main_window", u"Setup Lectures and Timings", None))
-        self.label_10.setText(QCoreApplication.translate("main_window", u"Add Lectures and their timings", None))
-        self.department_cmb.setItemText(0, QCoreApplication.translate("main_window", u"Computer Science", None))
+        self.Heading1_3.setText(QCoreApplication.translate("MainWindow", u"Step 2:", None))
+        self.MainLabel_3.setText(QCoreApplication.translate("MainWindow", u"Setup Lectures and Timings", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"Add Lectures and their timings", None))
+        self.Department_Input_Combobox.setItemText(0, QCoreApplication.translate("MainWindow", u"Computer Science", None))
 
-        self.department_cmb.setPlaceholderText(QCoreApplication.translate("main_window", u"Department", None))
-        self.level_cmb.setPlaceholderText(QCoreApplication.translate("main_window", u"Level", None))
-        self.discipline_cmb.setPlaceholderText(QCoreApplication.translate("main_window", u"Discipline", None))
+        self.Department_Input_Combobox.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Department", None))
+        self.LevelInput_Combobox.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Level", None))
+        self.Discipline_Input_Combobox.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Discipline", None))
         self.Add_More_Departments.setText("")
         self.Add_More_Levels.setText("")
         self.Add_More_Disciplines.setText("")
-        self.pushButton_4.setText(QCoreApplication.translate("main_window", u"Save", None))
+        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Save", None))
         self.Class_Settings_Buttons.setText("")
         self.Delete_Class_Button.setText("")
         self.Refresh_Class_Form.setText("")
-        ___qtablewidgetitem4 = self.sections_tbl.horizontalHeaderItem(0)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("main_window", u"Active semesters", None));
-        ___qtablewidgetitem5 = self.sections_tbl.horizontalHeaderItem(1)
-        ___qtablewidgetitem5.setText(QCoreApplication.translate("main_window", u"Sections", None));
+        ___qtablewidgetitem4 = self.SectionTable.horizontalHeaderItem(0)
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Active semesters", None));
+        ___qtablewidgetitem5 = self.SectionTable.horizontalHeaderItem(1)
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Sections", None));
         self.PreviousButton_3.setText("")
-        self.PreviousButton_Label_3.setText(QCoreApplication.translate("main_window", u"Previous", None))
-        self.NextButton_Label_3.setText(QCoreApplication.translate("main_window", u"Step 3", None))
+        self.PreviousButton_Label_3.setText(QCoreApplication.translate("MainWindow", u"Previous", None))
+        self.NextButton_Label_3.setText(QCoreApplication.translate("MainWindow", u"Step 3", None))
         self.NextButton_3.setText("")
-        self.label.setText(QCoreApplication.translate("main_window", u"SetUp Rooms, Labs, Halls", None))
-        self.computerLabsLabel.setText(QCoreApplication.translate("main_window", u"Computer-Labs", None))
-        self.bioLabsLabel.setText(QCoreApplication.translate("main_window", u"Bio-Labs", None))
-        self.miniComputerLabLabel_2.setText(QCoreApplication.translate("main_window", u"Mini-Computer-Lab", None))
-        self.lectureRoomsLabel.setText(QCoreApplication.translate("main_window", u"Lecture Rooms", None))
-        self.pushButton.setText(QCoreApplication.translate("main_window", u"Save", None))
-        self.label_3.setText(QCoreApplication.translate("main_window", u"Set Lectures page", None))
-        self.label_6.setText(QCoreApplication.translate("main_window", u"Intro page", None))
-        self.label_7.setText(QCoreApplication.translate("main_window", u"Contact us Page", None))
-        self.label_2.setText(QCoreApplication.translate("main_window", u"Settings page", None))
-        self.FooterRoughLabel.setText(QCoreApplication.translate("main_window", u"OneCli         ck TIme    table", None))
-        self.footer_lbl.setText(QCoreApplication.translate("main_window", u"Developed by \"Aqib Maqsood\"", None))
-        self.contactus_btn.setText(QCoreApplication.translate("main_window", u"Need Support ?", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"SetUp Rooms, Labs, Halls", None))
+        self.computerLabsLabel.setText(QCoreApplication.translate("MainWindow", u"Computer-Labs", None))
+        self.bioLabsLabel.setText(QCoreApplication.translate("MainWindow", u"Bio-Labs", None))
+        self.miniComputerLabLabel_2.setText(QCoreApplication.translate("MainWindow", u"Mini-Computer-Lab", None))
+        self.lectureRoomsLabel.setText(QCoreApplication.translate("MainWindow", u"Lecture Rooms", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Save", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Set Lectures page", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"Intro page", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"Contact us Page", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Settings page", None))
+        self.FooterRoughLabel.setText(QCoreApplication.translate("MainWindow", u"OneCli         ck TIme    table", None))
+        self.FooterMiddleLabel.setText(QCoreApplication.translate("MainWindow", u"Developed by \"Aqib Maqsood\"", None))
+        self.ContactUsButton.setText(QCoreApplication.translate("MainWindow", u"Need Support ?", None))
     # retranslateUi
 
