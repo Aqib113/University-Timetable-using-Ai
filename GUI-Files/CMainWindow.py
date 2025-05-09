@@ -14,30 +14,30 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
         # ******  ***   Connecting ToolBar buttons to their functions **** ******
         # ````````````````````````````````````````````````````````````````````````
         
-        # Connecting Window header_container Buttons
-        self.close_btn.clicked.connect(self.close)
-        self.minimize_btn.clicked.connect(self.showMinimized)
-        self.maximize_btn.clicked.connect(self.toggle_maximize)
+        # Connecting Window Header Buttons
+        self.Close_window_Button.clicked.connect(self.close)
+        self.Minimize_Button.clicked.connect(self.showMinimized)
+        self.Fullscreen_Button.clicked.connect(self.toggle_maximize)
 
 
         # ******  ***   navigation of HOME PAGE necessary  buttons **** ******# #````````````````````````````````````````````````````````````````````````
-        self.logo_btn.clicked.connect(lambda: self.main_container.setCurrentIndex(3))
-        self.contactus_btn.clicked.connect(lambda: self.main_container.setCurrentIndex(4))
-        self.settings_btn.clicked.connect(lambda: self.main_container.setCurrentIndex(5))
+        self.LogoButton.clicked.connect(lambda: self.MainContentBody.setCurrentIndex(3))
+        self.ContactUsButton.clicked.connect(lambda: self.MainContentBody.setCurrentIndex(4))
+        self.SettingButton.clicked.connect(lambda: self.MainContentBody.setCurrentIndex(5))
         
         
         
         
         # ******  ***   navigation of Left Manu buttons buttons **** ******
         #````````````````````````````````````````````````````````````````````````
-        self.timetable_btn.clicked.connect(lambda:self.main_container.setCurrentIndex(0))
-        self.datesheet_btn.clicked.connect(lambda:self.main_container.setCurrentIndex(1))
-        self.weekdays_btn.clicked.connect(self.setWeekDays)
-        self.lectures_btn.clicked.connect(self.setLectures)
-        self.classes_btn.clicked.connect(self.setClasses)
-        self.courses_btn.clicked.connect(self.setCourses)
-        self.rooms_btn.clicked.connect(self.setRooms)
-        self.expandmenu_btn.clicked.connect(self.ControlLeftMenu)
+        self.TimetableButton.clicked.connect(lambda:self.MainContentBody.setCurrentIndex(0))
+        self.DatesheetButton.clicked.connect(lambda:self.MainContentBody.setCurrentIndex(1))
+        self.SetWeekDays.clicked.connect(self.setWeekDays)
+        self.SetLectures.clicked.connect(self.setLectures)
+        self.SetClasses.clicked.connect(self.setClasses)
+        self.SetCourses.clicked.connect(self.setCourses)
+        self.SetRooms.clicked.connect(self.setRooms)
+        self.ExpandMenuButton.clicked.connect(self.ControlLeftMenu)
         
         
         
@@ -47,7 +47,7 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
         # Connecting Main screen Button
         self.NewTimetableButton.clicked.connect(lambda: self.TimetablePageExtention.setCurrentIndex(2))
         self.CloseProjectButton.clicked.connect(lambda: self.TimetablePageExtention.setCurrentIndex(0))
-        self.startproject_btn.clicked.connect(self.StartNewProject)
+        self.StartProjectButton.clicked.connect(self.StartNewProject)
         
         
         #  ******  ***   Implementing the Customized Week Page's form **** ******
@@ -62,11 +62,11 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
         self.day6.checkStateChanged.connect(self.setOptionalDays)
         self.day7.checkStateChanged.connect(self.setOptionalDays)
         
-        # Connecting Button to navigating the next page "lectures_btn"
-        self.next_btn.clicked.connect(self.saveCustomizedWeekForm)
+        # Connecting Button to navigating the next page "SetLectures"
+        self.NextButton_1.clicked.connect(self.saveCustomizedWeekForm)
         
         # Connecting 'Close Project' Button (For closing the current project)
-        self.closeproject_btn.clicked.connect(self.CloseCurrentProject)
+        self.CloseProject_Button.clicked.connect(self.CloseCurrentProject)
         
         
         #  ******  ***   Implmenting Add Lectures page **** ******
@@ -78,18 +78,18 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
         self.Total_Lectures = 0
         
         # Initializing the table dimensions headers etc
-        self.lectures_tbl.setColumnCount(4)
-        self.lectures_tbl.setHorizontalHeaderLabels(['Start Time', 'End Time', 'Total Time', ''])
-        self.lectures_tbl.horizontalHeader().setStretchLastSection(True)
-        self.lectures_tbl.setColumnWidth(0,105)
-        self.lectures_tbl.setColumnWidth(1,105)
-        self.lectures_tbl.setColumnWidth(2,135)
-        self.lectures_tbl.setColumnWidth(3,50)
+        self.LectureTable.setColumnCount(4)
+        self.LectureTable.setHorizontalHeaderLabels(['Start Time', 'End Time', 'Total Time', ''])
+        self.LectureTable.horizontalHeader().setStretchLastSection(True)
+        self.LectureTable.setColumnWidth(0,105)
+        self.LectureTable.setColumnWidth(1,105)
+        self.LectureTable.setColumnWidth(2,135)
+        self.LectureTable.setColumnWidth(3,50)
         # Setting First row of table
         self.addNewLecture()
         
         # Connecting 'Add More Lecture' Button
-        self.addlecture_btn.clicked.connect(self.addNewLecture)
+        self.AddMoreLecture_Button.clicked.connect(self.addNewLecture)
         
 
 
@@ -105,46 +105,46 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
             
     # ***** ****** for Left Menu Toolsbuttons  ***** ******
     def setLectures(self):
-        self.main_container.setCurrentIndex(2)
+        self.MainContentBody.setCurrentIndex(2)
         self.Inputpages.setCurrentIndex(1)
         
     def setClasses(self):
-        self.main_container.setCurrentIndex(2)
+        self.MainContentBody.setCurrentIndex(2)
         self.Inputpages.setCurrentIndex(2)
         
     def setRooms(self):
-        self.main_container.setCurrentIndex(2)
+        self.MainContentBody.setCurrentIndex(2)
         self.Inputpages.setCurrentIndex(3)
         
     def setCourses(self):
-        self.main_container.setCurrentIndex(2)
+        self.MainContentBody.setCurrentIndex(2)
         self.Inputpages.setCurrentIndex(4)
 
     def setWeekDays(self):
-        self.main_container.setCurrentIndex(2)
+        self.MainContentBody.setCurrentIndex(2)
         self.Inputpages.setCurrentIndex(0)
 
     # ---------- For expanding Left Menu
     def ControlLeftMenu(self):
         LeftMenuButtons = [
-            self.datesheet_btn,
-            self.timetable_btn,
-            self.classes_btn,
-            self.lectures_btn,
-            self.courses_btn,
-            self.weekdays_btn,
-            self.rooms_btn,
-            self.settings_btn
+            self.DatesheetButton,
+            self.TimetableButton,
+            self.SetClasses,
+            self.SetLectures,
+            self.SetCourses,
+            self.SetWeekDays,
+            self.SetRooms,
+            self.SettingButton
         ]
         
-        if self.expandmenu_btn.isChecked():
+        if self.ExpandMenuButton.isChecked():
             # Now AS if the button if checked It mean the left menu if opened. So now clocing it
             # Logic for Collapsing menu
             for button in LeftMenuButtons:
                 button.setFixedWidth(50)
                 # button.setFixedWidth(50)
-            self.middle_menu.setFixedWidth(70)
-            self.middle_menu.setStyleSheet(u"#middle_menu{\n"
+            self.middlebuttons.setFixedWidth(70)
+            self.middlebuttons.setStyleSheet(u"#middlebuttons{\n"
             "background-color: rgb(33, 47, 61);\n"
             "border-right: 1px solid rgb(0,0,0);\n"
             "border-top:1px solid rgb(0,0,0);\n"
@@ -152,7 +152,7 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
             "")
             icon12 = QIcon()
             icon12.addFile(u":/expand icon copy.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-            self.expandmenu_btn.setIcon(icon12)
+            self.ExpandMenuButton.setIcon(icon12)
 
         else:
             # Now AS if the button if checked It mean the left menu if Closed. So now Opening it
@@ -160,8 +160,8 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
             for button in LeftMenuButtons:
                 button.setFixedWidth(157)
                 # button.setFixedWidth(155)
-            self.middle_menu.setFixedWidth(175)
-            self.middle_menu.setStyleSheet(u"#middle_menu{\n"
+            self.middlebuttons.setFixedWidth(175)
+            self.middlebuttons.setStyleSheet(u"#middlebuttons{\n"
             "background-color: rgb(33, 47, 61);\n"
             "border-right: 1px solid rgb(0,0,0);\n"
             "border-top:1px solid rgb(0,0,0);\n"
@@ -173,21 +173,21 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
             "")
             icon12 = QIcon()
             icon12.addFile(u":/collapse icon.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-            self.expandmenu_btn.setIcon(icon12)
+            self.ExpandMenuButton.setIcon(icon12)
             
 # -------------------------------------------------------------------------------------------     
     # *****          Logic Functions For "Add Lectures" page        *****
     def StartNewProject(self):
         # User Entered Project name Extracting
-        text = self.projectname_txt.text()
+        text = self.ProjectNameInput.text()
         if text=='':
             text = 'Untitled_project'
         else:
             text = f" {text} "
         # Setting the Label text as same as the project name
-        self.projectname_lbl.setText(QCoreApplication.translate("main_window", text, None))
+        self.Project_Label.setText(QCoreApplication.translate("MainWindow", text, None))
         # Changing the Label stylesheet
-        self.content.setStyleSheet(u"#projectname_lbl{\n"
+        self.content.setStyleSheet(u"#Project_Label{\n"
             "color: rgb(255,255,255);\n"
             "border:none;\n"
             "\n"
@@ -197,28 +197,28 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
             "padding-right:10px;\n"
             "}\n"
             "\n"
-            "#closeproject_btn{\n"
+            "#CloseProject_Button{\n"
             "border:1px solid rgb(33, 47, 61);\n"
             "background:none;\n"
             "border-Bottom-right-radius:10px;\n"
             "}\n"
             "\n"
-            "#closeproject_btn:hover{\n"
+            "#CloseProject_Button:hover{\n"
             "background-color:  rgb(255, 0, 0);\n"
             "border:none;\n"
             "}")
         # Setting Changing the Icon of project close button
         icon = QIcon()
         icon.addFile(u":/CLose_project_icon.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.closeproject_btn.setIcon(icon)
+        self.CloseProject_Button.setIcon(icon)
         
         # As the new project started so enabling the User'Input pages and icon in single iteration
         Buttons_to_enable = [
-            self.weekdays_btn,
-            self.lectures_btn,
-            self.classes_btn,
-            self.rooms_btn,
-            self.courses_btn,
+            self.SetWeekDays,
+            self.SetLectures,
+            self.SetClasses,
+            self.SetRooms,
+            self.SetCourses,
         ]
         EnabledButtons_Logos = [
             ":/Days logo.png",
@@ -229,8 +229,8 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
         ]
         
         Buttons_to_disable = [
-            self.timetable_btn,
-            self.datesheet_btn
+            self.TimetableButton,
+            self.DatesheetButton
         ]
         DisabledButton_Logos = [
             ":/Timetable logo2.png",
@@ -249,36 +249,36 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
             icon.addFile(logo, QSize(), QIcon.Mode.Normal, QIcon.State.Off)
             button.setIcon(icon)
         
-        self.main_container.setCurrentIndex(2)
+        self.MainContentBody.setCurrentIndex(2)
         self.Inputpages.setCurrentIndex(0)
         
 
     def CloseCurrentProject(self):
 
         # Setting the Label text as same as the project name
-        self.projectname_lbl.setText(QCoreApplication.translate("main_window", u"", None))
-        self.projectname_txt.setText('')
+        self.Project_Label.setText(QCoreApplication.translate("MainWindow", u"", None))
+        self.ProjectNameInput.setText('')
         # Changing the Label stylesheet
-        self.content.setStyleSheet(u"#projectname_lbl{\n"
+        self.content.setStyleSheet(u"#Project_Label{\n"
             "border:none;\n"
             "background-color:none;\n"
             "\n"
             "}\n"
             "\n"
-            "#closeproject_btn{\n"
+            "#CloseProject_Button{\n"
             "background:none;\n"
             "border:none;\n"
             "}")
         # Setting Changing the Icon of project close button
-        self.closeproject_btn.setIcon(QIcon())
+        self.CloseProject_Button.setIcon(QIcon())
         
         # As the new project started so enabling the User'Input pages and icon in single iteration
         Buttons_to_disable = [
-            self.weekdays_btn,
-            self.lectures_btn,
-            self.classes_btn,
-            self.rooms_btn,
-            self.courses_btn,
+            self.SetWeekDays,
+            self.SetLectures,
+            self.SetClasses,
+            self.SetRooms,
+            self.SetCourses,
         ]
         DisabledButton_Logos = [
             ":/Days logo copy2.png",
@@ -289,8 +289,8 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
         ]
         
         Buttons_to_enable = [
-            self.timetable_btn,
-            self.datesheet_btn
+            self.TimetableButton,
+            self.DatesheetButton
         ]
         EnabledButton_Logos = [
             ":/Timetable logo.png",
@@ -309,7 +309,7 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
             icon.addFile(logo, QSize(), QIcon.Mode.Normal, QIcon.State.Off)
             button.setIcon(icon)
         
-        self.main_container.setCurrentIndex(0)
+        self.MainContentBody.setCurrentIndex(0)
         self.TimetablePageExtention.setCurrentIndex(0)
         
            
@@ -338,7 +338,7 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
     
     #  For Saving the customized week input
     def saveCustomizedWeekForm(self):
-        self.main_container.setCurrentIndex(2)
+        self.MainContentBody.setCurrentIndex(2)
         self.Inputpages.setCurrentIndex(1)
         
         
@@ -355,8 +355,8 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
     def addNewLecture(self):
         # First increment row count to add new row
         if self.Total_Lectures<10:
-            self.lectures_tbl.setRowCount(self.Total_Lectures + 1)
-            self.lectures_tbl.setRowHeight(self.Total_Lectures, 40)
+            self.LectureTable.setRowCount(self.Total_Lectures + 1)
+            self.LectureTable.setRowHeight(self.Total_Lectures, 40)
 
             # Create widgets with unique object names
             Start_Time = QTimeEdit()
@@ -365,36 +365,36 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
             
             Start_Time.timeChanged.connect(self.UpdateTotalTime)
 
-            end_time = QTimeEdit()
-            end_time.setObjectName(f'End_Time_{self.Total_Lectures}')
+            End_Time = QTimeEdit()
+            End_Time.setObjectName(f'End_Time_{self.Total_Lectures}')
 
-            totaltime_lbl = QLabel()
-            totaltime_lbl.setObjectName(f'Total_Time_{self.Total_Lectures}')
+            Total_Time = QLabel()
+            Total_Time.setObjectName(f'Total_Time_{self.Total_Lectures}')
 
-            deletelecture_btn = QPushButton()
-            deletelecture_btn.setObjectName(f'Del_Lecture_Button_{self.Total_Lectures}')
+            Del_Lecture_Button = QPushButton()
+            Del_Lecture_Button.setObjectName(f'Del_Lecture_Button_{self.Total_Lectures}')
             icon = QIcon()
             icon.addFile(u":/image 4.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-            deletelecture_btn.setIcon(icon)
-            deletelecture_btn.setIconSize(QSize(22, 22))
-            deletelecture_btn.setFixedSize(QSize(50,25))
-            deletelecture_btn.setStyleSheet(u"padding:10px;")
+            Del_Lecture_Button.setIcon(icon)
+            Del_Lecture_Button.setIconSize(QSize(22, 22))
+            Del_Lecture_Button.setFixedSize(QSize(50,25))
+            Del_Lecture_Button.setStyleSheet(u"padding:10px;")
             
-            deletelecture_btn.clicked.connect(self.DeleteCurrentLecture)
+            Del_Lecture_Button.clicked.connect(self.DeleteCurrentLecture)
 
 
             # Insert widgets into table
-            Elements_to_Insert = [Start_Time, end_time, totaltime_lbl, deletelecture_btn]
+            Elements_to_Insert = [Start_Time, End_Time, Total_Time, Del_Lecture_Button]
             col = [0,1,2,3]
             for col, widget in zip(col,Elements_to_Insert):
-                self.lectures_tbl.setCellWidget(self.Total_Lectures, col, widget)
+                self.LectureTable.setCellWidget(self.Total_Lectures, col, widget)
 
             # Increment total lectures counter
             self.Total_Lectures += 1
         else:
-            self.addlecture_btn.setEnabled(False)
-        if not self.addlecture_btn.isEnabled():
-            self.addlecture_btn.setIcon(QIcon(u":/Add button logo red.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off))
+            self.AddMoreLecture_Button.setEnabled(False)
+        if not self.AddMoreLecture_Button.isEnabled():
+            self.AddMoreLecture_Button.setIcon(QIcon(u":/Add button logo red.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off))
 
     # For Deleting the Lecture Slot
     def DeleteCurrentLecture(self):
@@ -402,16 +402,16 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
         Current_Lecture = int(self.sender().objectName().split('_')[-1])
         
         # Remove the row
-        self.lectures_tbl.removeRow(Current_Lecture)
+        self.LectureTable.removeRow(Current_Lecture)
         
         # Update remaining widgets
         for row in range(Current_Lecture, self.Total_Lectures - 1):
             for col in range(4):
-                widget = self.lectures_tbl.cellWidget(row, col)
+                widget = self.LectureTable.cellWidget(row, col)
                 if widget:
                     # Update object names based on widget type
                     if isinstance(widget, QTimeEdit):
-                        base_name = 'start_time' if col == 0 else 'end_time'
+                        base_name = 'StartTime' if col == 0 else 'End_Time'
                         widget.setObjectName(f'{base_name}_{row}')
                     elif isinstance(widget, QLabel):
                         widget.setObjectName(f'Total_Time_{row}')
@@ -423,9 +423,9 @@ class CMainWindow(QMainWindow, Ui_MainWindow):
         
         # Enable add lecture button if needed
         if self.Total_Lectures < 10:
-            self.addlecture_btn.setEnabled(True)
-        if self.addlecture_btn.isEnabled():
-            self.addlecture_btn.setIcon(QIcon(u":/Add button logo Black.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off))
+            self.AddMoreLecture_Button.setEnabled(True)
+        if self.AddMoreLecture_Button.isEnabled():
+            self.AddMoreLecture_Button.setIcon(QIcon(u":/Add button logo Black.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off))
     
     # For Updating Total time consumed for lecture
     def UpdateTotalTime(self):

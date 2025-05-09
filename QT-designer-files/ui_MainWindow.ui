@@ -1,7 +1,7 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>MainWindow</class>
- <widget class="QMainWindow" name="main_window">
+ <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -47,7 +47,7 @@ background-color: rgb(222, 228, 234);
      <number>0</number>
     </property>
     <item>
-     <widget class="QWidget" name="header_container" native="true">
+     <widget class="QWidget" name="Header" native="true">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
         <horstretch>0</horstretch>
@@ -124,7 +124,7 @@ border-left: 2px solid rgb(0, 0, 0);
            <number>0</number>
           </property>
           <item row="0" column="0" alignment="Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop">
-           <widget class="QPushButton" name="logo_btn">
+           <widget class="QPushButton" name="LogoButton">
             <property name="minimumSize">
              <size>
               <width>120</width>
@@ -132,7 +132,7 @@ border-left: 2px solid rgb(0, 0, 0);
              </size>
             </property>
             <property name="text">
-             <string />
+             <string/>
             </property>
             <property name="icon">
              <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -223,7 +223,7 @@ background-color:  rgb(33, 47, 61);
               <number>0</number>
              </property>
              <item>
-              <widget class="QLabel" name="title_lbl">
+              <widget class="QLabel" name="HeaderMiddleLabel_2">
                <property name="font">
                 <font>
                  <family>Roboto</family>
@@ -311,7 +311,7 @@ border-radius: 3px;
                  <number>0</number>
                 </property>
                 <item>
-                 <widget class="QPushButton" name="minimize_btn">
+                 <widget class="QPushButton" name="Minimize_Button">
                   <property name="minimumSize">
                    <size>
                     <width>37</width>
@@ -325,7 +325,7 @@ border-radius: 3px;
                    </size>
                   </property>
                   <property name="text">
-                   <string />
+                   <string/>
                   </property>
                   <property name="icon">
                    <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -334,7 +334,7 @@ border-radius: 3px;
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="maximize_btn">
+                 <widget class="QPushButton" name="Fullscreen_Button">
                   <property name="minimumSize">
                    <size>
                     <width>37</width>
@@ -348,7 +348,7 @@ border-radius: 3px;
                    </size>
                   </property>
                   <property name="text">
-                   <string />
+                   <string/>
                   </property>
                   <property name="icon">
                    <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -357,7 +357,7 @@ border-radius: 3px;
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="close_btn">
+                 <widget class="QPushButton" name="Close_window_Button">
                   <property name="minimumSize">
                    <size>
                     <width>37</width>
@@ -371,10 +371,10 @@ border-radius: 3px;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true" />
+                   <string notr="true"/>
                   </property>
                   <property name="text">
-                   <string />
+                   <string/>
                   </property>
                   <property name="icon">
                    <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -426,7 +426,7 @@ border-radius: 3px;
               <number>0</number>
              </property>
              <item>
-              <widget class="QLabel" name="projectname_lbl">
+              <widget class="QLabel" name="Project_Label">
                <property name="font">
                 <font>
                  <family>Roboto</family>
@@ -434,12 +434,12 @@ border-radius: 3px;
                 </font>
                </property>
                <property name="text">
-                <string />
+                <string/>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="closeproject_btn">
+              <widget class="QPushButton" name="CloseProject_Button">
                <property name="minimumSize">
                 <size>
                  <width>35</width>
@@ -453,7 +453,7 @@ border-radius: 3px;
                 </font>
                </property>
                <property name="text">
-                <string />
+                <string/>
                </property>
                <property name="iconSize">
                 <size>
@@ -481,7 +481,7 @@ border-radius: 3px;
        </sizepolicy>
       </property>
       <property name="styleSheet">
-       <string notr="true" />
+       <string notr="true"/>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <property name="spacing">
@@ -500,7 +500,7 @@ border-radius: 3px;
         <number>0</number>
        </property>
        <item alignment="Qt::AlignmentFlag::AlignLeft">
-        <widget class="QFrame" name="menu_left">
+        <widget class="QFrame" name="LeftMenu">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
            <horstretch>0</horstretch>
@@ -569,7 +569,7 @@ border-radius: 5px;
            <number>0</number>
           </property>
           <item>
-           <widget class="QFrame" name="middle_menu">
+           <widget class="QFrame" name="middlebuttons">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -616,7 +616,7 @@ height:40px;
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true" />
+                <string notr="true"/>
                </property>
                <property name="frameShape">
                 <enum>QFrame::Shape::StyledPanel</enum>
@@ -644,7 +644,7 @@ height:40px;
                  <number>0</number>
                 </property>
                 <item>
-                 <widget class="QPushButton" name="timetable_btn">
+                 <widget class="QPushButton" name="TimetableButton">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -670,13 +670,13 @@ height:40px;
                    </font>
                   </property>
                   <property name="toolTip">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="center"&gt;&lt;span style=" font-size:9pt; color:#ffffff;"&gt;Timetable(click to start)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;Timetable(click to start)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="toolTipDuration">
                    <number>-2</number>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true" />
+                   <string notr="true"/>
                   </property>
                   <property name="text">
                    <string>  TimeTable</string>
@@ -697,7 +697,7 @@ height:40px;
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="datesheet_btn">
+                 <widget class="QPushButton" name="DatesheetButton">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -761,7 +761,7 @@ padding-left:12px;</string>
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="weekdays_btn">
+                 <widget class="QPushButton" name="SetWeekDays">
                   <property name="enabled">
                    <bool>false</bool>
                   </property>
@@ -790,7 +790,7 @@ padding-left:12px;</string>
                    </font>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true" />
+                   <string notr="true"/>
                   </property>
                   <property name="text">
                    <string>  Weekely Days</string>
@@ -811,7 +811,7 @@ padding-left:12px;</string>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="lectures_btn">
+                 <widget class="QPushButton" name="SetLectures">
                   <property name="enabled">
                    <bool>false</bool>
                   </property>
@@ -840,7 +840,7 @@ padding-left:12px;</string>
                    </font>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true" />
+                   <string notr="true"/>
                   </property>
                   <property name="text">
                    <string>  Lecture Time </string>
@@ -861,7 +861,7 @@ padding-left:12px;</string>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="classes_btn">
+                 <widget class="QPushButton" name="SetClasses">
                   <property name="enabled">
                    <bool>false</bool>
                   </property>
@@ -891,7 +891,7 @@ padding-left:12px;</string>
                    </font>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true" />
+                   <string notr="true"/>
                   </property>
                   <property name="text">
                    <string>  Classes</string>
@@ -912,7 +912,7 @@ padding-left:12px;</string>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="rooms_btn">
+                 <widget class="QPushButton" name="SetRooms">
                   <property name="enabled">
                    <bool>false</bool>
                   </property>
@@ -941,7 +941,7 @@ padding-left:12px;</string>
                    </font>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true" />
+                   <string notr="true"/>
                   </property>
                   <property name="text">
                    <string>  Rooms</string>
@@ -962,7 +962,7 @@ padding-left:12px;</string>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="courses_btn">
+                 <widget class="QPushButton" name="SetCourses">
                   <property name="enabled">
                    <bool>false</bool>
                   </property>
@@ -1062,7 +1062,7 @@ padding-left: 11px;}</string>
                  <number>0</number>
                 </property>
                 <item alignment="Qt::AlignmentFlag::AlignBottom">
-                 <widget class="QPushButton" name="settings_btn">
+                 <widget class="QPushButton" name="SettingButton">
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
@@ -1127,7 +1127,7 @@ font-weight: Bold;
               <number>0</number>
              </property>
              <item alignment="Qt::AlignmentFlag::AlignTop">
-              <widget class="QPushButton" name="expandmenu_btn">
+              <widget class="QPushButton" name="ExpandMenuButton">
                <property name="minimumSize">
                 <size>
                  <width>0</width>
@@ -1141,7 +1141,7 @@ font-weight: Bold;
                 </size>
                </property>
                <property name="text">
-                <string />
+                <string/>
                </property>
                <property name="icon">
                 <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -1168,7 +1168,7 @@ font-weight: Bold;
         </widget>
        </item>
        <item>
-        <widget class="QStackedWidget" name="main_container">
+        <widget class="QStackedWidget" name="MainContentBody">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
            <horstretch>0</horstretch>
@@ -1187,7 +1187,7 @@ background-color: rgb(222, 228, 234)	;
          <property name="currentIndex">
           <number>2</number>
          </property>
-         <widget class="QWidget" name="timetable_view">
+         <widget class="QWidget" name="TimetablePage">
           <property name="styleSheet">
            <string notr="true">*{
 background-color:transparent;
@@ -1219,7 +1219,7 @@ font-size:15px;
              <widget class="QWidget" name="ButtonsPage">
               <layout class="QGridLayout" name="gridLayout_10">
                <item row="0" column="0" alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
-                <widget class="QFrame" name="button_frame">
+                <widget class="QFrame" name="ButtonFrame">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -1343,7 +1343,7 @@ border:1px solid rgb(255,255,255);
                <item>
                 <widget class="QWidget" name="NewTimeTablePageFrame1" native="true">
                  <property name="styleSheet">
-                  <string notr="true" />
+                  <string notr="true"/>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_8">
                   <item row="0" column="0" alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
@@ -1416,10 +1416,10 @@ padding: 10px;
                      <item alignment="Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTop">
                       <widget class="QPushButton" name="CloseProjectButton">
                        <property name="styleSheet">
-                        <string notr="true" />
+                        <string notr="true"/>
                        </property>
                        <property name="text">
-                        <string />
+                        <string/>
                        </property>
                        <property name="icon">
                         <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -1509,7 +1509,7 @@ padding: 10px;
                          </widget>
                         </item>
                         <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                         <widget class="QLineEdit" name="projectname_txt">
+                         <widget class="QLineEdit" name="ProjectNameInput">
                           <property name="minimumSize">
                            <size>
                             <width>200</width>
@@ -1547,7 +1547,7 @@ padding: 10px;
                       </spacer>
                      </item>
                      <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
-                      <widget class="QPushButton" name="startproject_btn">
+                      <widget class="QPushButton" name="StartProjectButton">
                        <property name="minimumSize">
                         <size>
                          <width>100</width>
@@ -1588,7 +1588,7 @@ border:1px solid rgb(255,255,255);
            </item>
           </layout>
          </widget>
-         <widget class="QWidget" name="datesheet_view">
+         <widget class="QWidget" name="DatesheetPage">
           <property name="styleSheet">
            <string notr="true">*{
 background-color:transparent;
@@ -1659,7 +1659,7 @@ border-color: rgb(255, 255, 255)
            </item>
           </layout>
          </widget>
-         <widget class="QWidget" name="input_view">
+         <widget class="QWidget" name="UserInputPage">
           <property name="styleSheet">
            <string notr="true">*{
 background-color:transparent;
@@ -1694,7 +1694,7 @@ border-radius: 3px;
            <item>
             <widget class="QWidget" name="MainBodyContent" native="true">
              <property name="styleSheet">
-              <string notr="true" />
+              <string notr="true"/>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_13">
               <property name="spacing">
@@ -1727,7 +1727,7 @@ border: 2px solid rgb(255,255,255);
                 <property name="currentIndex">
                  <number>2</number>
                 </property>
-                <widget class="QWidget" name="workdays_view">
+                <widget class="QWidget" name="WorkingDaysPage">
                  <layout class="QVBoxLayout" name="verticalLayout_26">
                   <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
                    <widget class="QFrame" name="WorkingDayPageFrame">
@@ -1895,7 +1895,7 @@ border-bottom: 3px solid rgb(33, 47, 61);
                      <item>
                       <widget class="QFrame" name="days">
                        <property name="styleSheet">
-                        <string notr="true" />
+                        <string notr="true"/>
                        </property>
                        <layout class="QGridLayout" name="gridLayout">
                         <property name="leftMargin">
@@ -2327,7 +2327,7 @@ border-radius: 7px;
                             <number>1</number>
                            </property>
                            <item>
-                            <widget class="QPushButton" name="previous_btn">
+                            <widget class="QPushButton" name="PreviousButton_1">
                              <property name="sizePolicy">
                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                                <horstretch>0</horstretch>
@@ -2341,7 +2341,7 @@ border-radius: 7px;
                               </font>
                              </property>
                              <property name="text">
-                              <string />
+                              <string/>
                              </property>
                              <property name="icon">
                               <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -2356,7 +2356,7 @@ border-radius: 7px;
                             </widget>
                            </item>
                            <item>
-                            <widget class="QLabel" name="previous_lbl">
+                            <widget class="QLabel" name="PreviousButton_Label_1">
                              <property name="sizePolicy">
                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                                <horstretch>0</horstretch>
@@ -2427,7 +2427,7 @@ border-radius: 7px;
                             <number>1</number>
                            </property>
                            <item>
-                            <widget class="QLabel" name="next_lbl">
+                            <widget class="QLabel" name="NextButton_Label_1">
                              <property name="sizePolicy">
                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                                <horstretch>0</horstretch>
@@ -2455,7 +2455,7 @@ border-radius: 7px;
                             </widget>
                            </item>
                            <item>
-                            <widget class="QPushButton" name="next_btn">
+                            <widget class="QPushButton" name="NextButton_1">
                              <property name="font">
                               <font>
                                <family>Roboto</family>
@@ -2463,10 +2463,10 @@ border-radius: 7px;
                               </font>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true" />
+                              <string notr="true"/>
                              </property>
                              <property name="text">
-                              <string />
+                              <string/>
                              </property>
                              <property name="icon">
                               <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -2491,9 +2491,9 @@ border-radius: 7px;
                   </item>
                  </layout>
                 </widget>
-                <widget class="QWidget" name="lecturetime_view">
+                <widget class="QWidget" name="LectureTimePage">
                  <property name="styleSheet">
-                  <string notr="true" />
+                  <string notr="true"/>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_35">
                   <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
@@ -2659,7 +2659,7 @@ border:none
                        </property>
                        <layout class="QHBoxLayout" name="horizontalLayout_14">
                         <item>
-                         <widget class="QTableWidget" name="lectures_tbl">
+                         <widget class="QTableWidget" name="LectureTable">
                           <property name="sizePolicy">
                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                             <horstretch>0</horstretch>
@@ -2731,7 +2731,7 @@ padding:2px;
                           <attribute name="verticalHeaderCascadingSectionResizes">
                            <bool>false</bool>
                           </attribute>
-                          <row />
+                          <row/>
                           <column>
                            <property name="text">
                             <string>Start Time</string>
@@ -2774,9 +2774,9 @@ padding:2px;
                           </property>
                           <layout class="QVBoxLayout" name="verticalLayout_34">
                            <item>
-                            <widget class="QPushButton" name="addlecture_btn">
+                            <widget class="QPushButton" name="AddMoreLecture_Button">
                              <property name="text">
-                              <string />
+                              <string/>
                              </property>
                              <property name="icon">
                               <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -2936,7 +2936,7 @@ border-radius: 7px;
                               </font>
                              </property>
                              <property name="text">
-                              <string />
+                              <string/>
                              </property>
                              <property name="icon">
                               <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -3058,10 +3058,10 @@ border-radius: 7px;
                               </font>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true" />
+                              <string notr="true"/>
                              </property>
                              <property name="text">
-                              <string />
+                              <string/>
                              </property>
                              <property name="icon">
                               <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -3086,7 +3086,7 @@ border-radius: 7px;
                   </item>
                  </layout>
                 </widget>
-                <widget class="QWidget" name="classes_view">
+                <widget class="QWidget" name="SetupClasses">
                  <layout class="QVBoxLayout" name="verticalLayout_20">
                   <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
                    <widget class="QFrame" name="SetupClassesFrame1">
@@ -3318,7 +3318,7 @@ border: 1px solid rgb(255, 255, 255);
                                <number>0</number>
                               </property>
                               <item row="0" column="0">
-                               <widget class="QComboBox" name="department_cmb">
+                               <widget class="QComboBox" name="Department_Input_Combobox">
                                 <property name="minimumSize">
                                  <size>
                                   <width>190</width>
@@ -3342,7 +3342,7 @@ border: 1px solid rgb(255, 255, 255);
                                </widget>
                               </item>
                               <item row="1" column="0">
-                               <widget class="QComboBox" name="level_cmb">
+                               <widget class="QComboBox" name="LevelInput_Combobox">
                                 <property name="minimumSize">
                                  <size>
                                   <width>190</width>
@@ -3361,7 +3361,7 @@ border: 1px solid rgb(255, 255, 255);
                                </widget>
                               </item>
                               <item row="2" column="0">
-                               <widget class="QComboBox" name="discipline_cmb">
+                               <widget class="QComboBox" name="Discipline_Input_Combobox">
                                 <property name="minimumSize">
                                  <size>
                                   <width>190</width>
@@ -3388,7 +3388,7 @@ border: 1px solid rgb(255, 255, 255);
                                  </sizepolicy>
                                 </property>
                                 <property name="text">
-                                 <string />
+                                 <string/>
                                 </property>
                                 <property name="icon">
                                  <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -3411,7 +3411,7 @@ border: 1px solid rgb(255, 255, 255);
                                  </sizepolicy>
                                 </property>
                                 <property name="text">
-                                 <string />
+                                 <string/>
                                 </property>
                                 <property name="icon">
                                  <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -3434,7 +3434,7 @@ border: 1px solid rgb(255, 255, 255);
                                  </sizepolicy>
                                 </property>
                                 <property name="text">
-                                 <string />
+                                 <string/>
                                 </property>
                                 <property name="icon">
                                  <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -3537,7 +3537,7 @@ border:none;
                                     </sizepolicy>
                                    </property>
                                    <property name="text">
-                                    <string />
+                                    <string/>
                                    </property>
                                    <property name="icon">
                                     <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -3566,10 +3566,10 @@ border:none;
                                     </font>
                                    </property>
                                    <property name="styleSheet">
-                                    <string notr="true" />
+                                    <string notr="true"/>
                                    </property>
                                    <property name="text">
-                                    <string />
+                                    <string/>
                                    </property>
                                    <property name="icon">
                                     <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -3592,7 +3592,7 @@ border:none;
                                     </sizepolicy>
                                    </property>
                                    <property name="text">
-                                    <string />
+                                    <string/>
                                    </property>
                                    <property name="icon">
                                     <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -3629,7 +3629,7 @@ border:none;
                          </spacer>
                         </item>
                         <item>
-                         <widget class="QTableWidget" name="sections_tbl">
+                         <widget class="QTableWidget" name="SectionTable">
                           <property name="minimumSize">
                            <size>
                             <width>320</width>
@@ -3654,13 +3654,13 @@ border:none;
                           <attribute name="horizontalHeaderVisible">
                            <bool>true</bool>
                           </attribute>
-                          <row />
-                          <row />
-                          <row />
-                          <row />
-                          <row />
-                          <row />
-                          <row />
+                          <row/>
+                          <row/>
+                          <row/>
+                          <row/>
+                          <row/>
+                          <row/>
+                          <row/>
                           <column>
                            <property name="text">
                             <string>Active semesters</string>
@@ -3803,7 +3803,7 @@ border-radius: 7px;
                               </font>
                              </property>
                              <property name="text">
-                              <string />
+                              <string/>
                              </property>
                              <property name="icon">
                               <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -3925,10 +3925,10 @@ border-radius: 7px;
                               </font>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true" />
+                              <string notr="true"/>
                              </property>
                              <property name="text">
-                              <string />
+                              <string/>
                              </property>
                              <property name="icon">
                               <iconset resource="../ui_resources/Images &amp; Icons/resource.qrc">
@@ -3953,7 +3953,7 @@ border-radius: 7px;
                   </item>
                  </layout>
                 </widget>
-                <widget class="QWidget" name="rooms_view">
+                <widget class="QWidget" name="SetUpRooms">
                  <layout class="QGridLayout" name="gridLayout_3">
                   <item row="0" column="0" alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
                    <widget class="QFrame" name="SetupRoomsPageFrame1">
@@ -4019,13 +4019,13 @@ border-color: rgb(255, 255, 255)
                         <number>16</number>
                        </property>
                        <item row="0" column="1">
-                        <widget class="QSpinBox" name="lectureRoomsSpinBox" />
+                        <widget class="QSpinBox" name="lectureRoomsSpinBox"/>
                        </item>
                        <item row="1" column="1">
-                        <widget class="QSpinBox" name="miniComputerLabSpinBox" />
+                        <widget class="QSpinBox" name="miniComputerLabSpinBox"/>
                        </item>
                        <item row="3" column="1">
-                        <widget class="QSpinBox" name="bioLabsSpinBox" />
+                        <widget class="QSpinBox" name="bioLabsSpinBox"/>
                        </item>
                        <item row="2" column="0">
                         <widget class="QLabel" name="computerLabsLabel">
@@ -4041,7 +4041,7 @@ border-color: rgb(255, 255, 255)
                         </widget>
                        </item>
                        <item row="2" column="1">
-                        <widget class="QSpinBox" name="computerLabsSpinBox" />
+                        <widget class="QSpinBox" name="computerLabsSpinBox"/>
                        </item>
                        <item row="3" column="0">
                         <widget class="QLabel" name="bioLabsLabel">
@@ -4233,7 +4233,7 @@ border-color: rgb(255, 255, 255)
      </widget>
     </item>
     <item>
-     <widget class="QWidget" name="footer_container" native="true">
+     <widget class="QWidget" name="Footer" native="true">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
         <horstretch>0</horstretch>
@@ -4306,21 +4306,21 @@ background-color: rgb(33, 47, 61);
         </spacer>
        </item>
        <item>
-        <widget class="QLabel" name="footer_lbl">
+        <widget class="QLabel" name="FooterMiddleLabel">
          <property name="font">
           <font>
            <family>Roboto</family>
           </font>
          </property>
          <property name="text">
-          <string>Developed by "Aqib Maqsood"</string>
+          <string>Developed by &quot;Aqib Maqsood&quot;</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QFrame" name="FooterRightLabel">
          <property name="styleSheet">
-          <string notr="true" />
+          <string notr="true"/>
          </property>
          <property name="frameShape">
           <enum>QFrame::Shape::StyledPanel</enum>
@@ -4345,7 +4345,7 @@ background-color: rgb(33, 47, 61);
            <number>0</number>
           </property>
           <item>
-           <widget class="QPushButton" name="contactus_btn">
+           <widget class="QPushButton" name="ContactUsButton">
             <property name="font">
              <font>
               <family>Roboto</family>
@@ -4367,7 +4367,7 @@ background-color: rgb(33, 47, 61);
   </widget>
  </widget>
  <resources>
-  <include location="../ui_resources/Images &amp; Icons/resource.qrc" />
+  <include location="../ui_resources/Images &amp; Icons/resource.qrc"/>
  </resources>
- <connections />
+ <connections/>
 </ui>
